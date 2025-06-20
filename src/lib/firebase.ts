@@ -25,21 +25,11 @@ import {
 	onAuthStateChanged,
 } from "firebase/auth";
 import { updateUser } from "@app/data";
+import { connectorConfig, firebaseConfig } from "@/config/firebaseConfig";
 
-export const app = initializeApp({
-	apiKey: "AIzaSyADWkjEEgwRDnZYX0YNB7Gc8TyJG8A3muY",
-	authDomain: "next25-movies.firebaseapp.com",
-	projectId: "next25-movies",
-	storageBucket: "next25-movies.firebasestorage.app",
-	messagingSenderId: "527664537880",
-	appId: "1:527664537880:web:016ba1a8987f56650cbe6d",
-});
+export const app = initializeApp(firebaseConfig);
 
-export const dc = getDataConnect(app, {
-	connector: "connector",
-	location: "us-central1",
-	service: "app",
-});
+export const dc = getDataConnect(app, connectorConfig);
 
 export const auth = getAuth(app);
 export const signIn = () => {
