@@ -1,5 +1,5 @@
 # Table of Contents
-- [**Overview**](#generated-javascript-readme)
+- [**Overview**](#generated-typescript-readme)
 - [**Accessing the connector**](#accessing-the-connector)
   - [*Connecting to the local Emulator*](#connecting-to-the-local-emulator)
 - [**Queries**](#queries)
@@ -17,7 +17,7 @@
   - [*DeleteWatch*](#deletewatch)
 
 # Generated TypeScript README
-This README will guide you through the process of using the generated JavaScript SDK package for the connector `connector`. It will also provide examples on how to use your generated SDK to call your Data Connect queries and mutations.
+This README will guide you through the process of using the generated TypeScript SDK package for the connector `connector`. It will also provide examples on how to use your generated SDK to call your Data Connect queries and mutations.
 
 ***NOTE:** This README is generated alongside the generated SDK. If you make changes to this file, they will be overwritten when the SDK is regenerated.*
 
@@ -30,7 +30,7 @@ A connector is a collection of Queries and Mutations. One SDK is generated for e
 
 You can find more information about connectors in the [Data Connect documentation](https://firebase.google.com/docs/data-connect#how-does).
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig } from '@app/data';
 
@@ -43,7 +43,7 @@ By default, the connector will connect to the production service.
 To connect to the emulator, you can use the following code.
 You can also follow the emulator instructions from the [Data Connect documentation](https://firebase.google.com/docs/data-connect/web-sdk#instrument-clients).
 
-```typescript
+```javascript
 import { connectDataConnectEmulator, getDataConnect } from 'firebase/data-connect';
 import { connectorConfig } from '@app/data';
 
@@ -70,31 +70,16 @@ Below are examples of how to use the `connector` connector's generated functions
 
 ## HomePage
 You can execute the `HomePage` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 homePage(): QueryPromise<HomePageData, undefined>;
 
-interface HomePageRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (): QueryRef<HomePageData, undefined>;
-}
-export const homePageRef: HomePageRef;
+homePageRef(): QueryRef<HomePageData, undefined>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 homePage(dc: DataConnect): QueryPromise<HomePageData, undefined>;
 
-interface HomePageRef {
-  ...
-  (dc: DataConnect): QueryRef<HomePageData, undefined>;
-}
-export const homePageRef: HomePageRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the homePageRef:
-```typescript
-const name = homePageRef.operationName;
-console.log(name);
+homePageRef(dc: DataConnect): QueryRef<HomePageData, undefined>;
 ```
 
 ### Variables
@@ -103,7 +88,7 @@ The `HomePage` query has no variables.
 Recall that executing the `HomePage` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `HomePageData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface HomePageData {
   newReleases: ({
     id: string;
@@ -163,7 +148,7 @@ export interface HomePageData {
 ```
 ### Using `HomePage`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, homePage } from '@app/data';
 
@@ -191,7 +176,7 @@ homePage().then((response) => {
 
 ### Using `HomePage`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, homePageRef } from '@app/data';
 
@@ -222,37 +207,22 @@ executeQuery(ref).then((response) => {
 
 ## SearchMovies
 You can execute the `SearchMovies` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 searchMovies(vars: SearchMoviesVariables): QueryPromise<SearchMoviesData, SearchMoviesVariables>;
 
-interface SearchMoviesRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars: SearchMoviesVariables): QueryRef<SearchMoviesData, SearchMoviesVariables>;
-}
-export const searchMoviesRef: SearchMoviesRef;
+searchMoviesRef(vars: SearchMoviesVariables): QueryRef<SearchMoviesData, SearchMoviesVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 searchMovies(dc: DataConnect, vars: SearchMoviesVariables): QueryPromise<SearchMoviesData, SearchMoviesVariables>;
 
-interface SearchMoviesRef {
-  ...
-  (dc: DataConnect, vars: SearchMoviesVariables): QueryRef<SearchMoviesData, SearchMoviesVariables>;
-}
-export const searchMoviesRef: SearchMoviesRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the searchMoviesRef:
-```typescript
-const name = searchMoviesRef.operationName;
-console.log(name);
+searchMoviesRef(dc: DataConnect, vars: SearchMoviesVariables): QueryRef<SearchMoviesData, SearchMoviesVariables>;
 ```
 
 ### Variables
 The `SearchMovies` query requires an argument of type `SearchMoviesVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface SearchMoviesVariables {
   query: string;
 }
@@ -261,7 +231,7 @@ export interface SearchMoviesVariables {
 Recall that executing the `SearchMovies` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `SearchMoviesData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface SearchMoviesData {
   movies: ({
     id: string;
@@ -281,7 +251,7 @@ export interface SearchMoviesData {
 ```
 ### Using `SearchMovies`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, searchMovies, SearchMoviesVariables } from '@app/data';
 
@@ -311,7 +281,7 @@ searchMovies(searchMoviesVars).then((response) => {
 
 ### Using `SearchMovies`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, searchMoviesRef, SearchMoviesVariables } from '@app/data';
 
@@ -344,37 +314,22 @@ executeQuery(ref).then((response) => {
 
 ## MoviePage
 You can execute the `MoviePage` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 moviePage(vars: MoviePageVariables): QueryPromise<MoviePageData, MoviePageVariables>;
 
-interface MoviePageRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars: MoviePageVariables): QueryRef<MoviePageData, MoviePageVariables>;
-}
-export const moviePageRef: MoviePageRef;
+moviePageRef(vars: MoviePageVariables): QueryRef<MoviePageData, MoviePageVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 moviePage(dc: DataConnect, vars: MoviePageVariables): QueryPromise<MoviePageData, MoviePageVariables>;
 
-interface MoviePageRef {
-  ...
-  (dc: DataConnect, vars: MoviePageVariables): QueryRef<MoviePageData, MoviePageVariables>;
-}
-export const moviePageRef: MoviePageRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the moviePageRef:
-```typescript
-const name = moviePageRef.operationName;
-console.log(name);
+moviePageRef(dc: DataConnect, vars: MoviePageVariables): QueryRef<MoviePageData, MoviePageVariables>;
 ```
 
 ### Variables
 The `MoviePage` query requires an argument of type `MoviePageVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface MoviePageVariables {
   movieId: string;
 }
@@ -383,7 +338,7 @@ export interface MoviePageVariables {
 Recall that executing the `MoviePage` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `MoviePageData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface MoviePageData {
   movie?: {
     id: string;
@@ -425,7 +380,7 @@ export interface MoviePageData {
 ```
 ### Using `MoviePage`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, moviePage, MoviePageVariables } from '@app/data';
 
@@ -455,7 +410,7 @@ moviePage(moviePageVars).then((response) => {
 
 ### Using `MoviePage`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, moviePageRef, MoviePageVariables } from '@app/data';
 
@@ -488,37 +443,22 @@ executeQuery(ref).then((response) => {
 
 ## WatchHistoryPage
 You can execute the `WatchHistoryPage` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 watchHistoryPage(vars?: WatchHistoryPageVariables): QueryPromise<WatchHistoryPageData, WatchHistoryPageVariables>;
 
-interface WatchHistoryPageRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars?: WatchHistoryPageVariables): QueryRef<WatchHistoryPageData, WatchHistoryPageVariables>;
-}
-export const watchHistoryPageRef: WatchHistoryPageRef;
+watchHistoryPageRef(vars?: WatchHistoryPageVariables): QueryRef<WatchHistoryPageData, WatchHistoryPageVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 watchHistoryPage(dc: DataConnect, vars?: WatchHistoryPageVariables): QueryPromise<WatchHistoryPageData, WatchHistoryPageVariables>;
 
-interface WatchHistoryPageRef {
-  ...
-  (dc: DataConnect, vars?: WatchHistoryPageVariables): QueryRef<WatchHistoryPageData, WatchHistoryPageVariables>;
-}
-export const watchHistoryPageRef: WatchHistoryPageRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the watchHistoryPageRef:
-```typescript
-const name = watchHistoryPageRef.operationName;
-console.log(name);
+watchHistoryPageRef(dc: DataConnect, vars?: WatchHistoryPageVariables): QueryRef<WatchHistoryPageData, WatchHistoryPageVariables>;
 ```
 
 ### Variables
 The `WatchHistoryPage` query has an optional argument of type `WatchHistoryPageVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface WatchHistoryPageVariables {
   limit?: number | null;
 }
@@ -527,7 +467,7 @@ export interface WatchHistoryPageVariables {
 Recall that executing the `WatchHistoryPage` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `WatchHistoryPageData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface WatchHistoryPageData {
   watches: ({
     id: UUIDString;
@@ -564,7 +504,7 @@ export interface WatchHistoryPageData {
 ```
 ### Using `WatchHistoryPage`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, watchHistoryPage, WatchHistoryPageVariables } from '@app/data';
 
@@ -596,7 +536,7 @@ watchHistoryPage(watchHistoryPageVars).then((response) => {
 
 ### Using `WatchHistoryPage`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, watchHistoryPageRef, WatchHistoryPageVariables } from '@app/data';
 
@@ -631,37 +571,22 @@ executeQuery(ref).then((response) => {
 
 ## BrowseMovies
 You can execute the `BrowseMovies` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 browseMovies(vars?: BrowseMoviesVariables): QueryPromise<BrowseMoviesData, BrowseMoviesVariables>;
 
-interface BrowseMoviesRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars?: BrowseMoviesVariables): QueryRef<BrowseMoviesData, BrowseMoviesVariables>;
-}
-export const browseMoviesRef: BrowseMoviesRef;
+browseMoviesRef(vars?: BrowseMoviesVariables): QueryRef<BrowseMoviesData, BrowseMoviesVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 browseMovies(dc: DataConnect, vars?: BrowseMoviesVariables): QueryPromise<BrowseMoviesData, BrowseMoviesVariables>;
 
-interface BrowseMoviesRef {
-  ...
-  (dc: DataConnect, vars?: BrowseMoviesVariables): QueryRef<BrowseMoviesData, BrowseMoviesVariables>;
-}
-export const browseMoviesRef: BrowseMoviesRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the browseMoviesRef:
-```typescript
-const name = browseMoviesRef.operationName;
-console.log(name);
+browseMoviesRef(dc: DataConnect, vars?: BrowseMoviesVariables): QueryRef<BrowseMoviesData, BrowseMoviesVariables>;
 ```
 
 ### Variables
 The `BrowseMovies` query has an optional argument of type `BrowseMoviesVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface BrowseMoviesVariables {
   partialTitle?: string | null;
   minDate?: DateString | null;
@@ -675,7 +600,7 @@ export interface BrowseMoviesVariables {
 Recall that executing the `BrowseMovies` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `BrowseMoviesData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface BrowseMoviesData {
   movies: ({
     id: string;
@@ -694,7 +619,7 @@ export interface BrowseMoviesData {
 ```
 ### Using `BrowseMovies`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, browseMovies, BrowseMoviesVariables } from '@app/data';
 
@@ -731,7 +656,7 @@ browseMovies(browseMoviesVars).then((response) => {
 
 ### Using `BrowseMovies`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, browseMoviesRef, BrowseMoviesVariables } from '@app/data';
 
@@ -771,37 +696,22 @@ executeQuery(ref).then((response) => {
 
 ## GetMovies
 You can execute the `GetMovies` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 getMovies(vars?: GetMoviesVariables): QueryPromise<GetMoviesData, GetMoviesVariables>;
 
-interface GetMoviesRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars?: GetMoviesVariables): QueryRef<GetMoviesData, GetMoviesVariables>;
-}
-export const getMoviesRef: GetMoviesRef;
+getMoviesRef(vars?: GetMoviesVariables): QueryRef<GetMoviesData, GetMoviesVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 getMovies(dc: DataConnect, vars?: GetMoviesVariables): QueryPromise<GetMoviesData, GetMoviesVariables>;
 
-interface GetMoviesRef {
-  ...
-  (dc: DataConnect, vars?: GetMoviesVariables): QueryRef<GetMoviesData, GetMoviesVariables>;
-}
-export const getMoviesRef: GetMoviesRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the getMoviesRef:
-```typescript
-const name = getMoviesRef.operationName;
-console.log(name);
+getMoviesRef(dc: DataConnect, vars?: GetMoviesVariables): QueryRef<GetMoviesData, GetMoviesVariables>;
 ```
 
 ### Variables
 The `GetMovies` query has an optional argument of type `GetMoviesVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface GetMoviesVariables {
   ids?: string[] | null;
 }
@@ -810,7 +720,7 @@ export interface GetMoviesVariables {
 Recall that executing the `GetMovies` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `GetMoviesData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface GetMoviesData {
   movies: ({
     id: string;
@@ -829,7 +739,7 @@ export interface GetMoviesData {
 ```
 ### Using `GetMovies`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, getMovies, GetMoviesVariables } from '@app/data';
 
@@ -861,7 +771,7 @@ getMovies(getMoviesVars).then((response) => {
 
 ### Using `GetMovies`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, getMoviesRef, GetMoviesVariables } from '@app/data';
 
@@ -896,31 +806,16 @@ executeQuery(ref).then((response) => {
 
 ## DetailedWatchHistory
 You can execute the `DetailedWatchHistory` query using the following action shortcut function, or by calling `executeQuery()` after calling the following `QueryRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 detailedWatchHistory(): QueryPromise<DetailedWatchHistoryData, undefined>;
 
-interface DetailedWatchHistoryRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (): QueryRef<DetailedWatchHistoryData, undefined>;
-}
-export const detailedWatchHistoryRef: DetailedWatchHistoryRef;
+detailedWatchHistoryRef(): QueryRef<DetailedWatchHistoryData, undefined>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `QueryRef` function.
-```typescript
+```javascript
 detailedWatchHistory(dc: DataConnect): QueryPromise<DetailedWatchHistoryData, undefined>;
 
-interface DetailedWatchHistoryRef {
-  ...
-  (dc: DataConnect): QueryRef<DetailedWatchHistoryData, undefined>;
-}
-export const detailedWatchHistoryRef: DetailedWatchHistoryRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the detailedWatchHistoryRef:
-```typescript
-const name = detailedWatchHistoryRef.operationName;
-console.log(name);
+detailedWatchHistoryRef(dc: DataConnect): QueryRef<DetailedWatchHistoryData, undefined>;
 ```
 
 ### Variables
@@ -929,7 +824,7 @@ The `DetailedWatchHistory` query has no variables.
 Recall that executing the `DetailedWatchHistory` query returns a `QueryPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `DetailedWatchHistoryData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface DetailedWatchHistoryData {
   watches: ({
     id: UUIDString;
@@ -971,7 +866,7 @@ export interface DetailedWatchHistoryData {
 ```
 ### Using `DetailedWatchHistory`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, detailedWatchHistory } from '@app/data';
 
@@ -995,7 +890,7 @@ detailedWatchHistory().then((response) => {
 
 ### Using `DetailedWatchHistory`'s `QueryRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, detailedWatchHistoryRef } from '@app/data';
 
@@ -1037,37 +932,22 @@ Below are examples of how to use the `connector` connector's generated functions
 
 ## UpdateUser
 You can execute the `UpdateUser` mutation using the following action shortcut function, or by calling `executeMutation()` after calling the following `MutationRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 updateUser(vars: UpdateUserVariables): MutationPromise<UpdateUserData, UpdateUserVariables>;
 
-interface UpdateUserRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars: UpdateUserVariables): MutationRef<UpdateUserData, UpdateUserVariables>;
-}
-export const updateUserRef: UpdateUserRef;
+updateUserRef(vars: UpdateUserVariables): MutationRef<UpdateUserData, UpdateUserVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `MutationRef` function.
-```typescript
+```javascript
 updateUser(dc: DataConnect, vars: UpdateUserVariables): MutationPromise<UpdateUserData, UpdateUserVariables>;
 
-interface UpdateUserRef {
-  ...
-  (dc: DataConnect, vars: UpdateUserVariables): MutationRef<UpdateUserData, UpdateUserVariables>;
-}
-export const updateUserRef: UpdateUserRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the updateUserRef:
-```typescript
-const name = updateUserRef.operationName;
-console.log(name);
+updateUserRef(dc: DataConnect, vars: UpdateUserVariables): MutationRef<UpdateUserData, UpdateUserVariables>;
 ```
 
 ### Variables
 The `UpdateUser` mutation requires an argument of type `UpdateUserVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface UpdateUserVariables {
   displayName?: string | null;
   imageUrl?: string | null;
@@ -1078,14 +958,14 @@ export interface UpdateUserVariables {
 Recall that executing the `UpdateUser` mutation returns a `MutationPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `UpdateUserData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface UpdateUserData {
   user: User_Key;
 }
 ```
 ### Using `UpdateUser`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, updateUser, UpdateUserVariables } from '@app/data';
 
@@ -1117,7 +997,7 @@ updateUser(updateUserVars).then((response) => {
 
 ### Using `UpdateUser`'s `MutationRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeMutation } from 'firebase/data-connect';
 import { connectorConfig, updateUserRef, UpdateUserVariables } from '@app/data';
 
@@ -1152,37 +1032,22 @@ executeMutation(ref).then((response) => {
 
 ## AddWatch
 You can execute the `AddWatch` mutation using the following action shortcut function, or by calling `executeMutation()` after calling the following `MutationRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 addWatch(vars: AddWatchVariables): MutationPromise<AddWatchData, AddWatchVariables>;
 
-interface AddWatchRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars: AddWatchVariables): MutationRef<AddWatchData, AddWatchVariables>;
-}
-export const addWatchRef: AddWatchRef;
+addWatchRef(vars: AddWatchVariables): MutationRef<AddWatchData, AddWatchVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `MutationRef` function.
-```typescript
+```javascript
 addWatch(dc: DataConnect, vars: AddWatchVariables): MutationPromise<AddWatchData, AddWatchVariables>;
 
-interface AddWatchRef {
-  ...
-  (dc: DataConnect, vars: AddWatchVariables): MutationRef<AddWatchData, AddWatchVariables>;
-}
-export const addWatchRef: AddWatchRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the addWatchRef:
-```typescript
-const name = addWatchRef.operationName;
-console.log(name);
+addWatchRef(dc: DataConnect, vars: AddWatchVariables): MutationRef<AddWatchData, AddWatchVariables>;
 ```
 
 ### Variables
 The `AddWatch` mutation requires an argument of type `AddWatchVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface AddWatchVariables {
   movieId: string;
   format?: string | null;
@@ -1194,14 +1059,14 @@ export interface AddWatchVariables {
 Recall that executing the `AddWatch` mutation returns a `MutationPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `AddWatchData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface AddWatchData {
   watch: Watch_Key;
 }
 ```
 ### Using `AddWatch`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, addWatch, AddWatchVariables } from '@app/data';
 
@@ -1234,7 +1099,7 @@ addWatch(addWatchVars).then((response) => {
 
 ### Using `AddWatch`'s `MutationRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeMutation } from 'firebase/data-connect';
 import { connectorConfig, addWatchRef, AddWatchVariables } from '@app/data';
 
@@ -1270,37 +1135,22 @@ executeMutation(ref).then((response) => {
 
 ## AddReview
 You can execute the `AddReview` mutation using the following action shortcut function, or by calling `executeMutation()` after calling the following `MutationRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 addReview(vars: AddReviewVariables): MutationPromise<AddReviewData, AddReviewVariables>;
 
-interface AddReviewRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars: AddReviewVariables): MutationRef<AddReviewData, AddReviewVariables>;
-}
-export const addReviewRef: AddReviewRef;
+addReviewRef(vars: AddReviewVariables): MutationRef<AddReviewData, AddReviewVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `MutationRef` function.
-```typescript
+```javascript
 addReview(dc: DataConnect, vars: AddReviewVariables): MutationPromise<AddReviewData, AddReviewVariables>;
 
-interface AddReviewRef {
-  ...
-  (dc: DataConnect, vars: AddReviewVariables): MutationRef<AddReviewData, AddReviewVariables>;
-}
-export const addReviewRef: AddReviewRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the addReviewRef:
-```typescript
-const name = addReviewRef.operationName;
-console.log(name);
+addReviewRef(dc: DataConnect, vars: AddReviewVariables): MutationRef<AddReviewData, AddReviewVariables>;
 ```
 
 ### Variables
 The `AddReview` mutation requires an argument of type `AddReviewVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface AddReviewVariables {
   movieId: string;
   rating: number;
@@ -1311,14 +1161,14 @@ export interface AddReviewVariables {
 Recall that executing the `AddReview` mutation returns a `MutationPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `AddReviewData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface AddReviewData {
   review: Review_Key;
 }
 ```
 ### Using `AddReview`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, addReview, AddReviewVariables } from '@app/data';
 
@@ -1350,7 +1200,7 @@ addReview(addReviewVars).then((response) => {
 
 ### Using `AddReview`'s `MutationRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeMutation } from 'firebase/data-connect';
 import { connectorConfig, addReviewRef, AddReviewVariables } from '@app/data';
 
@@ -1385,37 +1235,22 @@ executeMutation(ref).then((response) => {
 
 ## DeleteWatch
 You can execute the `DeleteWatch` mutation using the following action shortcut function, or by calling `executeMutation()` after calling the following `MutationRef` function, both of which are defined in [data/index.d.ts](./index.d.ts):
-```typescript
+```javascript
 deleteWatch(vars: DeleteWatchVariables): MutationPromise<DeleteWatchData, DeleteWatchVariables>;
 
-interface DeleteWatchRef {
-  ...
-  /* Allow users to create refs without passing in DataConnect */
-  (vars: DeleteWatchVariables): MutationRef<DeleteWatchData, DeleteWatchVariables>;
-}
-export const deleteWatchRef: DeleteWatchRef;
+deleteWatchRef(vars: DeleteWatchVariables): MutationRef<DeleteWatchData, DeleteWatchVariables>;
 ```
 You can also pass in a `DataConnect` instance to the action shortcut function or `MutationRef` function.
-```typescript
+```javascript
 deleteWatch(dc: DataConnect, vars: DeleteWatchVariables): MutationPromise<DeleteWatchData, DeleteWatchVariables>;
 
-interface DeleteWatchRef {
-  ...
-  (dc: DataConnect, vars: DeleteWatchVariables): MutationRef<DeleteWatchData, DeleteWatchVariables>;
-}
-export const deleteWatchRef: DeleteWatchRef;
-```
-
-If you need the name of the operation without creating a ref, you can retrieve the operation name by calling the `operationName` property on the deleteWatchRef:
-```typescript
-const name = deleteWatchRef.operationName;
-console.log(name);
+deleteWatchRef(dc: DataConnect, vars: DeleteWatchVariables): MutationRef<DeleteWatchData, DeleteWatchVariables>;
 ```
 
 ### Variables
 The `DeleteWatch` mutation requires an argument of type `DeleteWatchVariables`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
 
-```typescript
+```javascript
 export interface DeleteWatchVariables {
   watchId: UUIDString;
 }
@@ -1424,14 +1259,14 @@ export interface DeleteWatchVariables {
 Recall that executing the `DeleteWatch` mutation returns a `MutationPromise` that resolves to an object with a `data` property.
 
 The `data` property is an object of type `DeleteWatchData`, which is defined in [data/index.d.ts](./index.d.ts). It has the following fields:
-```typescript
+```javascript
 export interface DeleteWatchData {
   watch?: Watch_Key | null;
 }
 ```
 ### Using `DeleteWatch`'s action shortcut function
 
-```typescript
+```javascript
 import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, deleteWatch, DeleteWatchVariables } from '@app/data';
 
@@ -1461,7 +1296,7 @@ deleteWatch(deleteWatchVars).then((response) => {
 
 ### Using `DeleteWatch`'s `MutationRef` function
 
-```typescript
+```javascript
 import { getDataConnect, executeMutation } from 'firebase/data-connect';
 import { connectorConfig, deleteWatchRef, DeleteWatchVariables } from '@app/data';
 
