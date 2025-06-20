@@ -191,9 +191,7 @@ export default function WatchDialog({
 												setWatchDate(date);
 												setCalendarOpen(false);
 											}
-										}}
-										initialFocus
-									/>
+										}}									/>
 								</PopoverContent>
 							</Popover>
 						</div>
