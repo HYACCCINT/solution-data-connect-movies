@@ -12,6 +12,9 @@
   idx.workspace.onCreate = {
     install-dependencies = "pnpm install";
   };
+  idx.workspace.onStart = {
+    start-emulators = "npx -y firebase-tools@latest emulators:start";
+  };
   idx.previews = {
     enable = true; 
     previews = {

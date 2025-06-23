@@ -16,6 +16,7 @@
 
 import { initializeApp } from "firebase/app";
 import { getDataConnect } from "firebase/data-connect";
+import dataConnect from "@/config/data-connect"
 import {
 	getAuth,
 	GoogleAuthProvider,
@@ -29,7 +30,8 @@ import { connectorConfig, firebaseConfig } from "@/config/firebaseConfig";
 
 export const app = initializeApp(firebaseConfig);
 
-export const dc = getDataConnect(app, connectorConfig);
+// Set up Firebase Data Connect with the settings from /src/config/data-connect.ts
+export const dc = dataConnect(app);
 
 export const auth = getAuth(app);
 export const signIn = () => {

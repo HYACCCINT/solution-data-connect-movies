@@ -69,6 +69,14 @@ pnpm run dev
 ```
 1. Open your browser and navigate to the local URL provided in the terminal output (typically http://localhost:3000).
 
+### Firebase Data Connect Emulator
+
+This project can be configured to use the [Firebase Data Connect emulator for local development](https://firebase.google.com/docs/data-connect/quickstart-local). To use the emulator, you need to set the `DATA_CONNECT_EMULATOR_HOST` environment variable to the hostname of the emulator (e.g., `localhost`) and ensure the emulator is listening on port `9399`.
+
+The `dev` run script (`pnpm run dev`) is configured to use the emulator listening on `localhost:9399`.
+
+When running this application in Firebase Studio, the Firebase Data Connect emulator is used by default.
+
 ### Deploying the app
 
 Once your application is running locally, you can deploy it to the cloud. Follow the steps to deploy the [Data Connect backend](https://firebase.google.com/docs/data-connect/quickstart-local?userflow=automatic#deploy_your_schema_and_query_to_production) and the [Next.JS app using Firebase App Hosting](https://firebase.google.com/docs/app-hosting/get-started).

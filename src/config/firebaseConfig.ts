@@ -23,10 +23,3 @@ export const firebaseConfig = {
 	messagingSenderId: "527664537880",
 	appId: "1:527664537880:web:016ba1a8987f56650cbe6d",
 };
-
-// TODO: Update your app's Firebase Data Connect configuration here.
-export const connectorConfig = {
-    connector: "connector",
-	location: "us-central1",
-	service: "app",
-}
