@@ -59,14 +59,19 @@ In addition to the [general prerequisites](#prerequisites), follow these steps t
 
 #### Running the app locally
 
+1. Prepare seed data (movies, actors, reviews) for the Firebase Data Connect Emulator. The `seed-data.zip` file contains the required `dataconnect/.dataconnect/` directory structure. Extract the zip file at the top level of the project, and the files will be placed in the correct directory to be picked up by the emulator.
+   ```bash
+   unzip seed-data.zip
+   ```
+
 1. Start the Firebase Emulators.
-```bash
-firebase emulators:start
-```
+   ```bash
+   firebase emulators:start
+   ```
 1. Run the Next.js development server.
-```bash
-pnpm run dev
-```
+   ```bash
+   pnpm run dev
+   ```
 1. Open your browser and navigate to the local URL provided in the terminal output (typically http://localhost:3000).
 
 ### Firebase Data Connect Emulator
