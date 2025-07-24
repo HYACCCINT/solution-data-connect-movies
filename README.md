@@ -4,6 +4,8 @@ This is a demo app that shows to build a movie review and recommendation app usi
 
 This project demonstrates how to use Firebase Data Connect and Vertex AI for personalized movie recommendations.
 
+**Explore a detailed walkthrough of the demo and its key concepts on the solutions page at https://developers.google.com/solutions/learn/data-connect-grounded-agents**
+
 *This project is intended for demonstration purposes only. It is not intended for use in a production environment.*
 
 ## Try it out today
