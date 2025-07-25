@@ -14,12 +14,21 @@
  * limitations under the License.
  */
 
-// TODO: Add your app's Firebase configuration here. 
+
+/*  
+	TODO: Add your app's Firebase configuration here.
+
+	Follow these steps to create a 'web app' configuration in the Firebase console
+	and obtain the configuration object: 
+	https://firebase.google.com/docs/web/learn-more#config-object
+*/
+
+// 
 export const firebaseConfig = {
-	apiKey: "AIzaSyADWkjEEgwRDnZYX0YNB7Gc8TyJG8A3muY",
-	authDomain: "next25-movies.firebaseapp.com",
-	projectId: "next25-movies",
-	storageBucket: "next25-movies.firebasestorage.app",
-	messagingSenderId: "527664537880",
-	appId: "1:527664537880:web:016ba1a8987f56650cbe6d",
+	apiKey: "TODO_ADD_YOUR_CONFIGURATION",
+	authDomain: "TODO_ADD_YOUR_CONFIGURATION",
+	projectId: "TODO_ADD_YOUR_CONFIGURATION",
+	storageBucket: "TODO_ADD_YOUR_CONFIGURATION",
+	messagingSenderId: "TODO_ADD_YOUR_CONFIGURATION",
+	appId: "TODO_ADD_YOUR_CONFIGURATION",
 };

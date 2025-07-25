@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "DATA_CONNECT_EMULATOR_HOST=localhost GENKIT_ENV=dev next dev",
+    "dev": "GENKIT_ENV=dev next dev",
+    "dev:emulator": "DATA_CONNECT_EMULATOR_HOST=localhost pnpm dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
