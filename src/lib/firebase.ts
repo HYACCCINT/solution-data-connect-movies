@@ -15,7 +15,6 @@
  */
 
 import { initializeApp } from "firebase/app";
-import { getDataConnect } from "firebase/data-connect";
 import dataConnect from "@/config/data-connect"
 import {
 	getAuth,
@@ -26,7 +25,7 @@ import {
 	onAuthStateChanged,
 } from "firebase/auth";
 import { updateUser } from "@app/data";
-import { connectorConfig, firebaseConfig } from "@/config/firebaseConfig";
+import { firebaseConfig } from "@/config/firebaseConfig";
 
 export const app = initializeApp(firebaseConfig);
 

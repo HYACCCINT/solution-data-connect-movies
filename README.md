@@ -32,18 +32,23 @@ We recommend trying out this project in Firebase Studio. Click this button to la
 
 The demo can be run in Firebase Studio using the built-in Firebase emulators.
 
-However, for AI movie recommendations you need to set up a Firebase project, enable Vertex AI and the recommended APIs:
+However, for singing in and AI movie recommendations you need to set up a Firebase project, enable Vertex AI and the recommended APIs:
 
 1. A new Firebase project
    - *We recommended using a new Firebase project for this demo. This [simplifies cleanup](#delete-and-clean-up-deployed-services) to avoid incurring on-going costs after trying out this demo app.*
 1. Update the file `src/config/firebaseConfig.ts` with your [Firebase project configuration](https://firebase.google.com/docs/web/setup).
 1. [Activate billing on your Google Cloud / Firebase Project](https://console.cloud.google.com/billing/linkedaccount?project=_)
 1. [Enable Vertex AI and recommended APIs](https://console.cloud.google.com/vertex-ai) in the Google Cloud console.
+1. [Enable Firebase Data Connect API](https://console.developers.google.com/apis/api/firebasedataconnect.googleapis.com/overview) in the Google Cloud console.
+1. [Enable Firebase Authentication](https://console.firebase.google.com/project/_/authentication) and enable a sign-in provider in the Firebase console.
+   1. Configure the domain where you'll be accessing the app. If you are not sure, you can find the domain in the error message returned in the console log when clicking the "Sign In" button. ("The current domain is not authorized for OAuth operations"). Add the domain in the Firebase console: Authentication -> Settings -> Authorized domains.
 
 ### Getting started in Firebase Studio
 
+1. Follow the prerquisite steps above to set up your Firebase project.
 1. Open the project in Firebase Studio.
 1. When prompted, select your Firebase project.
+1. If you want to sign in and use AI movie recommendations, copy your [Firebase config for a web app](https://firebase.google.com/docs/web/learn-more#config-object) into the the file src/config/firebaseConfig.ts.
 1. The app is now ready! Switch to the **Web Preview** to see it in action.
 
 ### Getting started locally
@@ -65,14 +70,14 @@ In addition to the [general prerequisites](#prerequisites), follow these steps t
    ```bash
    unzip seed-data.zip
    ```
-
+1. If you want to sign in and use AI movie recommendations, copy your [Firebase config for a web app](https://firebase.google.com/docs/web/learn-more#config-object) into the the file src/config/firebaseConfig.ts.
 1. Start the Firebase Emulators.
    ```bash
    firebase emulators:start
    ```
-1. Run the Next.js development server.
+1. Run the Next.js development server with the Firebase Data Connect emulator.
    ```bash
-   pnpm run dev
+   pnpm run dev:emulator
    ```
 1. Open your browser and navigate to the local URL provided in the terminal output (typically http://localhost:3000).
 
@@ -80,7 +85,7 @@ In addition to the [general prerequisites](#prerequisites), follow these steps t
 
 This project can be configured to use the [Firebase Data Connect emulator for local development](https://firebase.google.com/docs/data-connect/quickstart-local). To use the emulator, you need to set the `DATA_CONNECT_EMULATOR_HOST` environment variable to the hostname of the emulator (e.g., `localhost`) and ensure the emulator is listening on port `9399`.
 
-The `dev` run script (`pnpm run dev`) is configured to use the emulator listening on `localhost:9399`.
+The `dev:emulator` run script (`pnpm run dev:emulator`) is configured to use the emulator listening on `localhost:9399`.
 
 When running this application in Firebase Studio, the Firebase Data Connect emulator is used by default.
 

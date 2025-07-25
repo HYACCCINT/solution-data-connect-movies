@@ -24,7 +24,7 @@
         command = [
           "pnpm"
           "run" 
-          "dev" 
+          "dev:emulator" 
           "--port"
           "$PORT" 
         ];
