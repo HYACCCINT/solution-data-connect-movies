@@ -101,8 +101,6 @@ query BrowseMovies(
 	$maxDate: Date
 	# lowest acceptable average rating for the movie, on a scale from 0.0 to 10.0
 	$minRating: Float
-	# array of acceptable ratings for the movie, such as ["G", "PG"] for family-friendly movies. omit for all ratings
-	$ratings: [String!]
 	# genres to allow results from. omit for all genres
 	$genres: [String!]
 ) @auth(level: PUBLIC) {
@@ -110,7 +108,6 @@ query BrowseMovies(
 		where: {
 			title: { contains: $partialTitle }
 			releaseDate: { ge: $minDate, le: $maxDate }
-			rating: { in: $ratings }
 			genre: { in: $genres }
 			movieStats_on_movie: { avgRating: { ge: $minRating } }
 		}
@@ -146,4 +143,40 @@ query DetailedWatchHistory @auth(level: USER) {
 			}
 		}
 	}
+}
+
+
+query SearchMoviesFTS(
+  $query: String
+) @auth(level: PUBLIC) {
+  query: movies_search(
+    query: $query,
+    queryFormat: QUERY
+  ) {
+    id
+    title
+    posterUrl
+	releaseDate
+	genre
+  }
+    plain: movies_search(
+    query: $query,
+    queryFormat: PLAIN
+  ) {
+    id
+    title
+    posterUrl
+	releaseDate
+	genre
+  }
+    phrase: movies_search(
+    query: $query,
+    queryFormat: PHRASE
+  ) {
+    id
+    title
+    posterUrl
+	releaseDate
+	genre
+  }
 }

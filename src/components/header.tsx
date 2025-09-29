@@ -32,7 +32,7 @@ import { cn } from "@/lib/utils";
 import { useAuth } from "@/lib/use-auth";
 import { signIn, signOut } from "@/lib/firebase";
 import { User } from "firebase/auth";
-import { Film, History, Sparkle } from "lucide-react";
+import { Film, History, Sparkle, SearchCheck } from "lucide-react";
 
 // Icons
 function SearchIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -192,6 +192,11 @@ export default function Header({ className }: HeaderProps) {
 						<Button asChild variant="ghost">
 							<Link href="/recommender">
 								<Sparkle /> NextWatch
+							</Link>
+						</Button>
+						<Button asChild variant="ghost">
+							<Link href="/advanced-search">
+							<SearchCheck /> Search
 							</Link>
 						</Button>
 					</nav>
