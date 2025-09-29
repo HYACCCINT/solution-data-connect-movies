@@ -144,7 +144,7 @@ export default function AdvancedSearchPage() {
                 ) : (
                      <div className="text-center py-12">
                         <p className="text-muted-foreground">
-                            Enter a term in the search bar to see results from four different search methods.
+                            Enter a term in the search bar to see results from three different search methods.
                         </p>
                     </div>
                 )}
