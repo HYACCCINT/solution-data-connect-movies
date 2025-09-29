@@ -1,12 +1,12 @@
 type Movie @table {
 	id: String!
-	title: String!
+	title: String! @searchable
 	"MPAA Rating (G, PG, PG-13, R)"
 	rating: String! @default(value: "PG")
 	posterUrl: String!
 	releaseDate: Date!
 	genre: String!
-	description: String
+	description: String @searchable
 	tags: [String]
 	embedding: Vector @col(size: 768) # Enables vector search
 }

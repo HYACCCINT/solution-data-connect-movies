@@ -1,0 +1,3777 @@
+mutation {
+  movie_insertMany(
+    data: [
+      {
+        description: "A group of inept but well-meaning wildlife rescuers accidentally releases a rare and endangered species of talking parrot into the city, leading to a chaotic search and a series of hilarious encounters as they try to recapture the feathered fugitive."
+        genre: "Comedy"
+        id: "parrot-pandemonium"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/parrot-pandemonium.jpg"
+        rating: "PG"
+        releaseDate: "2012-02-18"
+        tags: ["wildlife", "rescue", "parrot", "city", "chaos"]
+        title: "Parrot Pandemonium"
+      }
+      {
+        description: "When a shadowy organization steals a deadly virus, a disgraced special forces operative must team up with a rookie agent to stop them from unleashing a global pandemic. Their mission takes them from the bustling streets of Hong Kong to the frozen Siberian wilderness."
+        genre: "Action"
+        id: "silent-vector"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/silent-vector.jpg"
+        rating: "PG-13"
+        releaseDate: "2018-05-15"
+        tags: ["espionage", "virus", "revenge", "conspiracy"]
+        title: "Silent Vector"
+      }
+      {
+        description: "A group of elite mercenaries is hired to infiltrate a heavily guarded fortress and rescue a kidnapped scientist. They soon discover that the scientist holds the key to a powerful weapon, and their mission becomes a fight for survival against overwhelming odds."
+        genre: "Action"
+        id: "fortress-breach"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/fortress-breach.jpg"
+        rating: "R"
+        releaseDate: "2017-12-23"
+        tags: ["mercenaries", "rescue mission", "secret weapon", "survival"]
+        title: "Fortress Breach"
+      }
+      {
+        description: "In a dystopian future, a skilled hacker uncovers a government conspiracy to control the population through advanced technology. She joins forces with a rebel group to expose the truth and fight for freedom."
+        genre: "Action"
+        id: "digital-uprising"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/digital-uprising.jpg"
+        rating: "PG-13"
+        releaseDate: "2021-03-22"
+        tags: ["dystopian future", "hackers", "conspiracy", "rebellion"]
+        title: "Digital Uprising"
+      }
+      {
+        description: "A by-the-book cop is forced to team up with a rebellious bounty hunter to take down a powerful drug cartel that is terrorizing the streets of Miami. They must overcome their differences and use their unique skills to bring the criminals to justice."
+        genre: "Action"
+        id: "sunset-justice"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/sunset-justice.jpg"
+        rating: "R"
+        releaseDate: "1989-07-29"
+        tags: ["buddy cop", "drug cartel", "miami", "revenge"]
+        title: "Sunset Justice"
+      }
+      {
+        description: "In a post-apocalyptic wasteland, a lone warrior must escort a young woman with a mysterious power to a safe haven, while battling ruthless raiders and mutated creatures. Their journey is a desperate fight for survival in a world gone mad."
+        genre: "Action"
+        id: "wasteland-exodus"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/wasteland-exodus.jpg"
+        rating: "PG-13"
+        releaseDate: "1984-02-02"
+        tags: ["post-apocalyptic", "wasteland", "survival", "mutants"]
+        title: "Wasteland Exodus"
+      }
+      {
+        description: "A skilled martial artist is forced to protect his village from a corrupt businessman who wants to take their land. He must use his training and courage to stand up to the powerful forces threatening his home."
+        genre: "Action"
+        id: "iron-will"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/iron-will.jpg"
+        rating: "PG"
+        releaseDate: "1982-06-03"
+        tags: ["martial arts", "village", "corruption", "revenge"]
+        title: "Iron Will"
+      }
+      {
+        description: "In a world ravaged by climate change, a group of survivors must embark on a perilous journey to find a new home. They face dangerous weather conditions, hostile factions, and the constant threat of starvation."
+        genre: "Action"
+        id: "ember-dawn"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/ember-dawn.jpg"
+        rating: "PG-13"
+        releaseDate: "2020-12-22"
+        tags: ["climate change", "survival", "perilous journey", "dystopian"]
+        title: "Ember Dawn"
+      }
+      {
+        description: "When a powerful corporation unleashes a dangerous AI, a group of hackers must band together to stop it from taking over the world. They use their skills to infiltrate the corporation's systems and fight for humanity's future."
+        genre: "Action"
+        id: "digital-override"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/digital-override.jpg"
+        rating: "PG-13"
+        releaseDate: "2012-02-14"
+        tags: [
+          "artificial intelligence"
+          "hackers"
+          "cybersecurity"
+          "corporation"
+        ]
+        title: "Digital Override"
+      }
+      {
+        description: "An ex-cop seeking revenge for the murder of his family infiltrates a notorious motorcycle gang. He rises through the ranks, becoming embroiled in their criminal activities while secretly plotting their downfall."
+        genre: "Action"
+        id: "renegade-rider"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/renegade-rider.jpg"
+        rating: "R"
+        releaseDate: "1986-11-16"
+        tags: ["motorcycle gang", "revenge", "undercover", "crime"]
+        title: "Renegade Rider"
+      }
+      {
+        description: "In a dystopian future, a group of rebels fights against a tyrannical government that controls every aspect of people's lives. They must use their skills and courage to ignite a revolution and restore freedom to their society."
+        genre: "Action"
+        id: "freedoms-dawn"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/freedoms-dawn.jpg"
+        rating: "PG-13"
+        releaseDate: "1984-02-21"
+        tags: [
+          "dystopian future"
+          "rebels"
+          "tyrannical government"
+          "revolution"
+        ]
+        title: "Freedom's Dawn"
+      }
+      {
+        description: "A group of young adventurers stumbles upon an ancient map leading to the legendary City of Gold in the Amazon rainforest. They must overcome treacherous terrain and ruthless treasure hunters to claim the lost riches."
+        genre: "Adventure"
+        id: "the-city-of-gold"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-city-of-gold.jpg"
+        rating: "PG"
+        releaseDate: "1983-05-27"
+        tags: ["lost city", "amazon", "treasure hunt", "1980s"]
+        title: "The City of Gold"
+      }
+      {
+        description: "When a catastrophic solar flare threatens to engulf the Earth, a team of scientists and engineers must embark on a perilous journey to the center of the Earth to deploy a device that can stabilize the planet's core."
+        genre: "Adventure"
+        id: "core-command"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/core-command.jpg"
+        rating: "PG-13"
+        releaseDate: "2012-10-18"
+        tags: ["earth core", "solar flare", "disaster", "sci-fi"]
+        title: "Core Command"
+      }
+      {
+        description: "When a series of bizarre weather anomalies threatens to disrupt the world's climate, a team of meteorologists and engineers must race against time to activate a network of weather-control devices scattered across the globe."
+        genre: "Adventure"
+        id: "the-weather-wars"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-weather-wars.jpg"
+        rating: "PG-13"
+        releaseDate: "2005-08-19"
+        tags: ["weather anomalies", "climate change", "disaster", "technology"]
+        title: "The Weather Wars"
+      }
+      {
+        description: "A group of young filmmakers sets out to document the legendary Bigfoot in the Pacific Northwest. They soon realize that the creature is more than just a myth, and they must fight for survival against a terrifying force of nature."
+        genre: "Adventure"
+        id: "sasquatch"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/sasquatch.jpg"
+        rating: "R"
+        releaseDate: "2023-04-09"
+        tags: ["bigfoot", "found footage", "horror", "wilderness"]
+        title: "Sasquatch"
+      }
+      {
+        description: "A woman makes a wish to get married, but she mistakenly casts a love spell on the wrong person. Now she must work to reverse the spell."
+        genre: "Rom-Com"
+        id: "love-potion"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/love-potion.jpg"
+        rating: "PG-13"
+        releaseDate: "2014-11-19"
+        tags: ["Magic", "Witch", "Neighbor", "Love Spell"]
+        title: "Love Potion"
+      }
+      {
+        description: "A young woman discovers a hidden map that leads to the legendary Fountain of Youth. She must embark on a perilous journey through the jungles of South America, facing deadly traps and ruthless mercenaries, to unlock the secrets of immortality."
+        genre: "Adventure"
+        id: "the-fountain"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-fountain.jpg"
+        rating: "PG-13"
+        releaseDate: "2016-11-26"
+        tags: ["fountain of youth", "immortality", "jungle", "treasure hunt"]
+        title: "The Fountain"
+      }
+      {
+        description: "When a powerful earthquake reveals a hidden city beneath the streets of San Francisco, a team of urban explorers and scientists must venture into the unknown to uncover its secrets. They soon discover a lost civilization with a dark history and a dangerous secret."
+        genre: "Adventure"
+        id: "the-city-below"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-city-below.jpg"
+        rating: "PG-13"
+        releaseDate: "2000-07-19"
+        tags: [
+          "hidden city"
+          "earthquake"
+          "urban exploration"
+          "san francisco"
+        ]
+        title: "The City Below"
+      }
+      {
+        description: "A group of friends on a sailing trip gets caught in a mysterious storm that transports them to a parallel universe. They must navigate a bizarre and dangerous world, facing strange creatures and alternate versions of themselves, to find a way back home."
+        genre: "Adventure"
+        id: "the-other-side"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-other-side.jpg"
+        rating: "PG-13"
+        releaseDate: "2013-08-09"
+        tags: ["parallel universe", "sailing", "storm", "alternate reality"]
+        title: "The Other Side"
+      }
+      {
+        description: "A young archaeologist discovers a hidden chamber beneath Stonehenge, revealing a portal to a prehistoric world. She must travel back in time to prevent a cataclysmic event that threatens to destroy both the past and the present."
+        genre: "Adventure"
+        id: "the-stone-circle"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-stone-circle.jpg"
+        rating: "PG"
+        releaseDate: "1989-01-26"
+        tags: ["stonehenge", "time travel", "prehistoric world", "portal"]
+        title: "The Stone Circle"
+      }
+      {
+        description: "When a series of mysterious disappearances rocks a small coastal town, a group of friends uncovers a dark secret about the town's origins. They must confront a terrifying creature from the depths of the ocean, a being of immense power and ancient evil."
+        genre: "Adventure"
+        id: "the-deep-ones"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-deep-ones.jpg"
+        rating: "R"
+        releaseDate: "1981-12-19"
+        tags: ["coastal town", "creature", "mystery", "ocean"]
+        title: "The Deep Ones"
+      }
+      {
+        description: "Two rival baking show contestants are forced to team up when they accidentally swap their signature recipes, leading to a hilarious and chaotic competition to win the coveted Golden Whisk award."
+        genre: "Comedy"
+        id: "batter-up"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/batter-up.jpg"
+        rating: "PG"
+        releaseDate: "2022-01-10"
+        tags: ["baking", "competition", "rivalry", "friendship", "recipe swap"]
+        title: "Batter Up!"
+      }
+      {
+        description: "A group of eccentric friends decides to stage a fake alien invasion to boost their struggling town's economy, only to find themselves facing a real extraterrestrial encounter."
+        genre: "Comedy"
+        id: "extraterrestrial-escapade"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/extraterrestrial-escapade.jpg"
+        rating: "PG-13"
+        releaseDate: "2000-04-22"
+        tags: [
+          "aliens"
+          "small town"
+          "fake invasion"
+          "eccentric characters"
+          "unexpected encounter"
+        ]
+        title: "Extraterrestrial Escapade"
+      }
+      {
+        description: "A struggling musician accidentally swaps phones with a famous pop star, leading to a series of hilarious misunderstandings and an unexpected romance as they navigate each other's wildly different lives."
+        genre: "Comedy"
+        id: "accidental-anthem"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/accidental-anthem.jpg"
+        rating: "PG-13"
+        releaseDate: "2023-03-06"
+        tags: [
+          "phone swap"
+          "musician"
+          "pop star"
+          "romance"
+          "misunderstanding"
+        ]
+        title: "Accidental Anthem"
+      }
+      {
+        description: "Two rival food truck owners are forced to compete for customers at a local festival, leading to a series of culinary battles, sabotage attempts, and an unexpected romance as they discover their shared passion for food."
+        genre: "Comedy"
+        id: "food-fight-frenzy"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/food-fight-frenzy.jpg"
+        rating: "PG-13"
+        releaseDate: "2019-10-26"
+        tags: ["food truck", "competition", "festival", "romance", "cuisine"]
+        title: "Food Fight Frenzy"
+      }
+      {
+        description: "A group of eccentric tourists on a guided bus tour accidentally gets lost in a remote wilderness area, leading to a series of comical misadventures and unexpected bonding experiences as they try to find their way back to civilization."
+        genre: "Comedy"
+        id: "wilderness-wandering"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/wilderness-wandering.jpg"
+        rating: "PG"
+        releaseDate: "1984-07-11"
+        tags: [
+          "tour bus"
+          "wilderness"
+          "lost"
+          "eccentric characters"
+          "misadventures"
+        ]
+        title: "Wilderness Wandering"
+      }
+      {
+        description: "A group of struggling actors decides to stage a play in a haunted theater, hoping to attract attention and revive their careers, only to find themselves facing real paranormal activity and a series of hilarious backstage mishaps."
+        genre: "Comedy"
+        id: "stage-fright-fiasco"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/stage-fright-fiasco.jpg"
+        rating: "PG-13"
+        releaseDate: "1985-03-04"
+        tags: [
+          "actors"
+          "haunted theater"
+          "play"
+          "paranormal activity"
+          "backstage"
+        ]
+        title: "Stage Fright Fiasco"
+      }
+      {
+        description: "In the wake of a family tragedy, two estranged sisters must return to their childhood home. As they confront their shared past, buried resentments and secrets resurface, forcing them to re-evaluate their relationship and find a way to forgive each other."
+        genre: "Drama"
+        id: "the-weight-of-silence"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-weight-of-silence.jpg"
+        rating: "PG-13"
+        releaseDate: "2001-02-20"
+        tags: [
+          "family tragedy"
+          "sisters"
+          "secrets"
+          "forgiveness"
+          "redemption"
+        ]
+        title: "The Weight of Silence"
+      }
+      {
+        description: "Set against the backdrop of the Cold War, a brilliant but troubled mathematician is recruited by the government to decipher enemy codes. As he delves deeper into the world of espionage, he becomes increasingly paranoid and isolated, questioning his sanity and the true motives of those around him."
+        genre: "Drama"
+        id: "the-ciphers-labyrinth"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-ciphers-labyrinth.jpg"
+        rating: "R"
+        releaseDate: "1983-12-02"
+        tags: ["Cold War", "espionage", "paranoia", "isolation", "sanity"]
+        title: "The Cipher's Labyrinth"
+      }
+      {
+        description: "A struggling artist forms an unlikely bond with a terminally ill patient in a hospice. As they share their hopes, dreams, and fears, they inspire each other to embrace life and find beauty in the face of death. The film explores themes of love, loss, and the power of human connection."
+        genre: "Drama"
+        id: "the-colors-of-goodbye"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-colors-of-goodbye.jpg"
+        rating: "PG"
+        releaseDate: "2013-02-21"
+        tags: ["terminal illness", "artist", "hospice", "love", "loss"]
+        title: "The Colors of Goodbye"
+      }
+      {
+        description: "A group of high school students navigates the complexities of adolescence, dealing with issues of identity, bullying, and social pressure. As they struggle to find their place in the world, they learn the importance of self-acceptance and the power of friendship."
+        genre: "Drama"
+        id: "the-edge-of-seventeen"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-edge-of-seventeen.jpg"
+        rating: "PG-13"
+        releaseDate: "2015-02-09"
+        tags: [
+          "adolescence"
+          "identity"
+          "bullying"
+          "social pressure"
+          "friendship"
+        ]
+        title: "The Edge of Seventeen"
+      }
+      {
+        description: "A young woman living in a small, conservative town dreams of escaping to the big city and pursuing her artistic ambitions. However, she faces opposition from her family and community, who expect her to conform to their traditional values. She must choose between following her heart and fulfilling her obligations."
+        genre: "Drama"
+        id: "the-road-not-taken"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-road-not-taken.jpg"
+        rating: "PG"
+        releaseDate: "1984-02-08"
+        tags: [
+          "small town"
+          "artistic ambitions"
+          "traditional values"
+          "self-discovery"
+          "escape"
+        ]
+        title: "The Road Not Taken"
+      }
+      {
+        description: "A successful lawyer's life is turned upside down when he is diagnosed with a terminal illness. As he comes to terms with his mortality, he re-evaluates his priorities and seeks to make amends for his past mistakes. He reconnects with his estranged family and finds solace in unexpected places."
+        genre: "Drama"
+        id: "the-final-chapter"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-final-chapter.jpg"
+        rating: "PG-13"
+        releaseDate: "2013-11-02"
+        tags: [
+          "terminal illness"
+          "mortality"
+          "redemption"
+          "family reconciliation"
+          "self-discovery"
+        ]
+        title: "The Final Chapter"
+      }
+      {
+        description: "A gifted but troubled musician struggles with addiction and mental illness. As he spirals out of control, he must confront his demons and find a way to reclaim his life and his music. The film explores the destructive power of addiction and the healing power of art."
+        genre: "Drama"
+        id: "the-symphony-of-pain"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-symphony-of-pain.jpg"
+        rating: "R"
+        releaseDate: "2005-10-17"
+        tags: ["addiction", "mental illness", "musician", "redemption", "art"]
+        title: "The Symphony of Pain"
+      }
+      {
+        description: "A group of college students forms an underground poker club, seeking excitement and escape from their mundane lives. As the stakes get higher, they become entangled in a web of deceit and betrayal, risking their friendships and their futures. The film explores the allure of risk and the consequences of greed."
+        genre: "Drama"
+        id: "the-edge-of-the-game"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-edge-of-the-game.jpg"
+        rating: "PG-13"
+        releaseDate: "2002-08-19"
+        tags: ["college students", "poker", "gambling", "deceit", "betrayal"]
+        title: "The Edge of the Game"
+      }
+      {
+        description: "A young woman defies societal expectations and pursues her dream of becoming a professional dancer in the male-dominated world of ballet. She faces discrimination and prejudice, but her passion and determination drive her to overcome the obstacles in her path. The film explores themes of ambition, gender equality, and the pursuit of excellence."
+        genre: "Drama"
+        id: "the-swans-ascent"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-swans-ascent.jpg"
+        rating: "PG"
+        releaseDate: "2014-06-01"
+        tags: [
+          "ballet"
+          "gender equality"
+          "ambition"
+          "discrimination"
+          "excellence"
+        ]
+        title: "The Swan's Ascent"
+      }
+      {
+        description: "A group of friends playing a virtual reality game find themselves trapped inside the game with no way out. They must fight for their survival against the game's increasingly dangerous challenges."
+        genre: "Thriller"
+        id: "virtual-nightmare"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/virtual-nightmare.jpg"
+        rating: "PG-13"
+        releaseDate: "2012-06-28"
+        tags: ["virtual reality", "game", "trapped", "survival", "futuristic"]
+        title: "Virtual Nightmare"
+      }
+      {
+        description: "A man with a dark past seeks refuge in a small town, but his secrets catch up to him when a series of mysterious events begin to occur. He must confront his past and protect those he cares about."
+        genre: "Thriller"
+        id: "the-reckoning"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-reckoning.jpg"
+        rating: "R"
+        releaseDate: "2016-03-02"
+        tags: ["small town", "dark past", "secrets", "revenge", "mystery"]
+        title: "The Reckoning"
+      }
+      {
+        description: "A group of friends on a mountain climbing expedition gets caught in a blizzard and seeks shelter in a remote cabin. They soon discover that the cabin is not as safe as it seems and that they are not alone."
+        genre: "Thriller"
+        id: "frozen-fear"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/frozen-fear.jpg"
+        rating: "PG-13"
+        releaseDate: "2021-08-26"
+        tags: [
+          "mountain climbing"
+          "blizzard"
+          "remote cabin"
+          "isolation"
+          "survival"
+        ]
+        title: "Frozen Fear"
+      }
+      {
+        description: "A young woman inherits her grandmother's house and discovers a hidden room containing a collection of creepy dolls. She soon realizes that the dolls are alive and that they have a sinister agenda."
+        genre: "Thriller"
+        id: "dollhouse"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/dollhouse.jpg"
+        rating: "R"
+        releaseDate: "1983-10-30"
+        tags: [
+          "dolls"
+          "inheritance"
+          "hidden room"
+          "supernatural"
+          "sinister"
+        ]
+        title: "Dollhouse"
+      }
+      {
+        description: "A group of college students on a spring break trip gets stranded on a deserted island and discovers that they are not alone. A mysterious creature is hunting them, and they must fight for survival."
+        genre: "Thriller"
+        id: "island-of-fear"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/island-of-fear.jpg"
+        rating: "PG-13"
+        releaseDate: "2001-05-09"
+        tags: [
+          "deserted island"
+          "spring break"
+          "creature"
+          "survival"
+          "stranded"
+        ]
+        title: "Island of Fear"
+      }
+      {
+        description: "A private investigator is hired to find a missing woman, but his investigation leads him down a dark path of corruption, murder, and conspiracy. He must navigate the city's underbelly to uncover the truth."
+        genre: "Thriller"
+        id: "the-long-shadow"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-long-shadow.jpg"
+        rating: "R"
+        releaseDate: "1974-02-20"
+        tags: [
+          "private investigator"
+          "missing person"
+          "corruption"
+          "murder"
+          "conspiracy"
+        ]
+        title: "The Long Shadow"
+      }
+      {
+        description: "In a dystopian future where emotions are suppressed through mandatory medication, a government worker discovers a hidden community of 'feelers' who resist the system. He becomes torn between his loyalty to the state and the allure of genuine human connection."
+        genre: "Sci-Fi"
+        id: "the-feelers"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-feelers.jpg"
+        rating: "PG-13"
+        releaseDate: "1974-08-25"
+        tags: [
+          "dystopian"
+          "emotional suppression"
+          "rebellion"
+          "human connection"
+        ]
+        title: "The Feelers"
+      }
+      {
+        description: "A group of young hackers discovers a hidden message embedded in a popular virtual reality game, leading them to uncover a global conspiracy involving mind control technology. They must band together to expose the truth before their minds are compromised."
+        genre: "Sci-Fi"
+        id: "mind-runners"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/mind-runners.jpg"
+        rating: "PG"
+        releaseDate: "1989-01-06"
+        tags: ["virtual reality", "hacking", "conspiracy", "mind control"]
+        title: "Mind Runners"
+      }
+      {
+        description: "On a terraformed Mars colony, a series of mysterious disappearances plague the human settlers. A hardened detective, haunted by his past, uncovers a hidden Martian secret that threatens the fragile peace between humans and the native inhabitants."
+        genre: "Sci-Fi"
+        id: "crimson-sands"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/crimson-sands.jpg"
+        rating: "R"
+        releaseDate: "2014-09-16"
+        tags: ["Mars colony", "mystery", "alien contact", "cultural conflict"]
+        title: "Crimson Sands"
+      }
+      {
+        description: "A young penguin leaves his Antarctic home to pursue his dream of becoming a tap dancer. He faces challenges, makes new friends, and learns the importance of following his heart."
+        genre: "Animation"
+        id: "tap-happy"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/tap-happy.jpg"
+        rating: "G"
+        releaseDate: "2006-07-05"
+        tags: ["penguins", "dancing", "dreams", "friendship", "family"]
+        title: "Tap Happy"
+      }
+      {
+        description: "In a retro-futuristic 1950s, a brilliant but eccentric scientist invents a device that can transport objects through parallel universes. When his invention falls into the wrong hands, he must team up with a skeptical government agent to prevent a catastrophic breach between realities."
+        genre: "Sci-Fi"
+        id: "quantum-breach"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/quantum-breach.jpg"
+        rating: "PG"
+        releaseDate: "1987-09-12"
+        tags: [
+          "retro-futuristic"
+          "parallel universes"
+          "government conspiracy"
+          "1950s"
+        ]
+        title: "Quantum Breach"
+      }
+      {
+        description: "A young woman returns to her childhood home to care for her ailing grandmother, only to discover a terrifying secret hidden within the walls. Strange occurrences and disturbing visions lead her to believe that her family is cursed."
+        genre: "Horror"
+        id: "the-inheritance"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-inheritance.jpg"
+        rating: "PG-13"
+        releaseDate: "2006-06-12"
+        tags: ["family secret", "haunted house", "curse", "visions"]
+        title: "The Inheritance"
+      }
+      {
+        description: "A group of friends on a weekend getaway accidentally awaken an ancient evil in the woods. As they try to escape, they are hunted by a relentless force that feeds on their fear and paranoia."
+        genre: "Horror"
+        id: "terror-creek"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/terror-creek.jpg"
+        rating: "R"
+        releaseDate: "1985-06-15"
+        tags: ["ancient evil", "woods", "paranoia", "slasher"]
+        title: "Terror Creek"
+      }
+      {
+        description: "In a remote farmhouse, a family is terrorized by a demonic entity that possesses their youngest child. Desperate, they seek the help of a renowned exorcist to save their daughter's soul."
+        genre: "Horror"
+        id: "possessed"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/possessed.jpg"
+        rating: "R"
+        releaseDate: "1973-02-03"
+        tags: ["demonic possession", "exorcism", "religious horror", "family"]
+        title: "Possessed"
+      }
+      {
+        description: "A group of online gamers discover that the horror game they are playing is linked to a series of real-life murders. As they delve deeper into the game, they become targets themselves, blurring the line between reality and virtuality."
+        genre: "Horror"
+        id: "game-over"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/game-over.jpg"
+        rating: "R"
+        releaseDate: "2014-10-24"
+        tags: ["virtual reality", "online game", "murder mystery", "technology"]
+        title: "Game Over"
+      }
+      {
+        description: "A young couple buys their dream home, only to discover that it is haunted by the spirits of its former residents. As the paranormal activity intensifies, they must uncover the dark history of the house to break the cycle of terror."
+        genre: "Horror"
+        id: "the-haunting-of-hawthorne-house"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-haunting-of-hawthorne-house.jpg"
+        rating: "PG-13"
+        releaseDate: "2008-01-17"
+        tags: ["haunted house", "ghosts", "paranormal", "new home"]
+        title: "The Haunting of Hawthorne House"
+      }
+      {
+        description: "Strangers find themselves trapped in a series of increasingly deadly escape rooms, discovering that the rooms are designed to exploit their deepest fears and secrets. As the game master pulls the strings, they must work together to survive."
+        genre: "Horror"
+        id: "room-4-escape"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/room-4-escape.jpg"
+        rating: "PG-13"
+        releaseDate: "2021-01-04"
+        tags: ["escape room", "puzzle", "trapped", "twisted"]
+        title: "Room 4 Escape"
+      }
+      {
+        description: "A group of college students renovating an abandoned asylum discover a hidden room containing a collection of disturbing medical experiments. As they delve deeper into the asylum's dark history, they awaken a malevolent force."
+        genre: "Horror"
+        id: "madhouse"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/madhouse.jpg"
+        rating: "R"
+        releaseDate: "1981-01-09"
+        tags: ["asylum", "ghosts", "experiments", "haunted"]
+        title: "Madhouse"
+      }
+      {
+        description: "After a global pandemic wipes out most of humanity, a family struggles to survive in a post-apocalyptic world overrun by infected creatures. They must fight to protect each other from both the living and the dead."
+        genre: "Horror"
+        id: "aftermath"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/aftermath.jpg"
+        rating: "PG-13"
+        releaseDate: "2022-03-31"
+        tags: ["pandemic", "zombies", "family", "survival"]
+        title: "Aftermath"
+      }
+      {
+        description: "A group of hikers discovers an abandoned mansion, only to discover that the land is protected by an ancient demon. They must survive a night of horrors, to make it out alive."
+        genre: "Horror"
+        id: "woods-of-the-demon"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/woods-of-the-demon.jpg"
+        rating: "R"
+        releaseDate: "2014-05-10"
+        tags: ["demon", "abandoned mansion", "woods", "ancient"]
+        title: "Woods of the Demon"
+      }
+      {
+        description: "After the loss of his daughter, a man seeks the help of a shaman in the jungles of Brazil. He soon realizes, that some things, are best left dead."
+        genre: "Horror"
+        id: "jungle-curse"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/jungle-curse.jpg"
+        rating: "PG-13"
+        releaseDate: "2007-10-26"
+        tags: ["jungle", "paranormal", "shaman", "haunted"]
+        title: "Jungle Curse"
+      }
+      {
+        description: "A group of friends in college is haunted by nightmares. They realize they are reliving the same deaths, every time they fall asleep."
+        genre: "Horror"
+        id: "never-sleep-again"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/never-sleep-again.jpg"
+        rating: "PG-13"
+        releaseDate: "2002-01-05"
+        tags: ["dreams", "death", "college", "haunted"]
+        title: "Never Sleep Again"
+      }
+      {
+        description: "A shy librarian and a flamboyant rock star accidentally swap their luggage at the airport. As they try to retrieve their belongings, they're drawn into each other's worlds, leading to hilarious mishaps and an unlikely connection."
+        genre: "Rom-Com"
+        id: "lost-luggage-found-love"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/lost-luggage-found-love.jpg"
+        rating: "PG"
+        releaseDate: "1984-01-23"
+        tags: [
+          "rock star"
+          "librarian"
+          "opposites attract"
+          "80s"
+          "fish out of water"
+        ]
+        title: "Lost Luggage, Found Love"
+      }
+      {
+        description: "Two rival chefs, forced to work together at a prestigious culinary competition, must overcome their animosity to win. As they develop creative dishes, sparks fly."
+        genre: "Rom-Com"
+        id: "spoonful-of-love"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/spoonful-of-love.jpg"
+        rating: "PG-13"
+        releaseDate: "1983-04-22"
+        tags: [
+          "cooking"
+          "chefs"
+          "culinary competition"
+          "rivals to lovers"
+          "passion"
+        ]
+        title: "Spoonful of Love"
+      }
+      {
+        description: "Two coworkers, each with elaborate dating rules, must team up to play matchmaker for their bosses. Along the way, they must learn to open their hearts."
+        genre: "Rom-Com"
+        id: "the-matchmaking-scheme"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-matchmaking-scheme.jpg"
+        rating: "PG"
+        releaseDate: "2019-04-02"
+        tags: ["Office", "Rules", "Coworkers", "Matchmaker"]
+        title: "The Matchmaking Scheme"
+      }
+      {
+        description: "A photographer finds herself constantly dreaming about her ex who she hasn't spoken to in years. When she learns that he is getting married, she must confront her feelings."
+        genre: "Rom-Com"
+        id: "wedding-photos"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/wedding-photos.jpg"
+        rating: "PG"
+        releaseDate: "2016-11-18"
+        tags: ["Exes", "Photographer", "Wedding", "Dreaming"]
+        title: "Wedding Photos"
+      }
+      {
+        description: "Two strangers are forced to be each other's fake dates at a wedding when they realize they are both trying to avoid an ex. They must work to keep the ruse up, but end up forming a genuine connection."
+        genre: "Rom-Com"
+        id: "wedding-crashers"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/wedding-crashers.jpg"
+        rating: "PG-13"
+        releaseDate: "2012-08-11"
+        tags: ["Wedding", "Exes", "Fake Dating", "Summer"]
+        title: "Wedding Crashers"
+      }
+      {
+        description: "A young man who is in line to inherit the family business falls for a woman who is the complete opposite of him. He struggles with following his heart or his duty."
+        genre: "Rom-Com"
+        id: "the-city-heart"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-city-heart.jpg"
+        rating: "PG"
+        releaseDate: "1987-01-25"
+        tags: ["Rich", "Poor", "Opposites Attract", "Family"]
+        title: "The City Heart"
+      }
+      {
+        description: "A young woman who is in love with her best friend must help him find love after he meets someone new. Her heart is constantly pulled as she decides if she should tell him how she feels."
+        genre: "Rom-Com"
+        id: "always-you"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/always-you.jpg"
+        rating: "PG"
+        releaseDate: "1975-01-10"
+        tags: ["Best Friend", "Love Triangle", "70s", "Unrequited Love"]
+        title: "Always You"
+      }
+      {
+        description: "When two strangers get stuck in an elevator together, they are forced to overcome their differences and develop a relationship. A power outage leaves them without help for days, and they start to fall in love."
+        genre: "Rom-Com"
+        id: "stuck-on-you"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/stuck-on-you.jpg"
+        rating: "PG"
+        releaseDate: "1980-11-21"
+        tags: ["Elevator", "Opposites Attract", "80s", "Power Outage"]
+        title: "Stuck On You"
+      }
+      {
+        description: "A tech mogul's groundbreaking invention blurs the lines between reality and simulation, trapping a group of beta testers in a deadly game of cat and mouse. They must unravel the truth behind the system before they lose their minds and their lives."
+        genre: "Mystery"
+        id: "simulacrum"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/simulacrum.jpg"
+        rating: "PG-13"
+        releaseDate: "2022-01-17"
+        tags: [
+          "virtual reality"
+          "simulation"
+          "tech mogul"
+          "beta testers"
+          "mind game"
+        ]
+        title: "Simulacrum"
+      }
+      {
+        description: "During a festive Christmas gathering at a remote manor, a priceless family heirloom vanishes, and suspicion falls upon every member of the eccentric family. A detective is called in to unravel the mystery before the holiday cheer turns deadly."
+        genre: "Mystery"
+        id: "crimson-yuletide"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/crimson-yuletide.jpg"
+        rating: "PG"
+        releaseDate: "1984-12-23"
+        tags: ["christmas", "manor", "family secrets", "heirloom", "detective"]
+        title: "Crimson Yuletide"
+      }
+      {
+        description: "A series of seemingly unrelated deaths rock a quiet coastal town, each death mirroring a scene from a classic horror novel. A determined detective and a skeptical local doctor must race against time to identify the killer before they strike again."
+        genre: "Mystery"
+        id: "literary-graves"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/literary-graves.jpg"
+        rating: "R"
+        releaseDate: "1988-10-26"
+        tags: [
+          "small town"
+          "serial killer"
+          "horror novels"
+          "detective"
+          "doctor"
+        ]
+        title: "Literary Graves"
+      }
+      {
+        description: "A group of students on a field trip to a remote archaeological dig stumbles upon a hidden chamber with ancient artifacts. When one of them accidentally awakens a dormant evil, they must work together to contain it before it escapes and wreaks havoc on the world."
+        genre: "Mystery"
+        id: "chamber-of-the-ancients"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/chamber-of-the-ancients.jpg"
+        rating: "PG"
+        releaseDate: "1980-03-12"
+        tags: [
+          "archaeological dig"
+          "ancient artifacts"
+          "dormant evil"
+          "students"
+          "teamwork"
+        ]
+        title: "Chamber of the Ancients"
+      }
+      {
+        description: "During the height of the California Gold Rush, a determined woman disguises herself as a man to stake her claim in a lawless mining town. As she navigates the treacherous landscape and confronts ruthless claim jumpers, she discovers her own strength and resilience, challenging the gender norms of the era."
+        genre: "Western"
+        id: "the-miners-claim"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-miners-claim.jpg"
+        rating: "PG"
+        releaseDate: "1986-08-18"
+        tags: ["Gold Rush", "Disguise", "Perseverance", "California"]
+        title: "The Miner's Claim"
+      }
+      {
+        description: "On the brink of the Civil War, a conflicted Southern belle must choose between her loyalty to her family and her growing affection for a runaway slave seeking freedom. As tensions escalate and the country hurtles toward conflict, she risks everything to help him escape, challenging the social norms of the era and embracing a forbidden love."
+        genre: "Western"
+        id: "the-rebel-heart"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-rebel-heart.jpg"
+        rating: "PG-13"
+        releaseDate: "2016-09-02"
+        tags: ["Civil War", "Forbidden Love", "Social Norms", "Southern Belle"]
+        title: "The Rebel Heart"
+      }
+      {
+        description: "During the tumultuous years of Reconstruction, a Black Union soldier returns to his Southern hometown to reclaim his family's land and rebuild his life. As he faces racial prejudice and violent opposition from former Confederates, he must fight to protect his property and assert his rights, becoming a symbol of hope for his community."
+        genre: "Western"
+        id: "the-promised-land"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-promised-land.jpg"
+        rating: "PG-13"
+        releaseDate: "2003-09-01"
+        tags: [
+          "Reconstruction"
+          "Racial Prejudice"
+          "Resilience"
+          "Union Soldier"
+        ]
+        title: "The Promised Land"
+      }
+      {
+        description: "In the aftermath of a devastating Indian raid, a resourceful pioneer woman must protect her family and rebuild their homestead while her husband is away. As she faces relentless threats from both nature and hostile forces, she discovers her inner strength and resourcefulness, becoming a symbol of resilience and determination on the American frontier."
+        genre: "Western"
+        id: "the-homestead"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-homestead.jpg"
+        rating: "PG-13"
+        releaseDate: "2020-05-08"
+        tags: [
+          "Pioneer Woman"
+          "Indian Raid"
+          "Resilience"
+          "American Frontier"
+        ]
+        title: "The Homestead"
+      }
+      {
+        description: "During the tumultuous years of the Lincoln County War, a young gunslinger becomes entangled in a bloody feud between rival factions vying for control of the New Mexico Territory. As he navigates the treacherous landscape of political intrigue and violent conflict, he must choose between loyalty and survival, becoming a pawn in a game that threatens to consume him."
+        genre: "Western"
+        id: "the-crimson-feud"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-crimson-feud.jpg"
+        rating: "R"
+        releaseDate: "2002-09-06"
+        tags: ["Lincoln County War", "Feud", "Loyalty", "New Mexico Territory"]
+        title: "The Crimson Feud"
+      }
+      {
+        description: "In the aftermath of a devastating smallpox epidemic, a lone survivor embarks on a perilous journey across the desolate plains to find other survivors and rebuild civilization. As he faces relentless threats from hostile tribes and desperate scavengers, he must confront his own inner demons and rediscover his humanity, becoming a symbol of hope in a post-apocalyptic world."
+        genre: "Western"
+        id: "the-silent-plains"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-silent-plains.jpg"
+        rating: "PG-13"
+        releaseDate: "2001-03-07"
+        tags: ["Smallpox", "Survival", "Humanity", "Post-Apocalyptic"]
+        title: "The Silent Plains"
+      }
+      {
+        description: "During the height of the Texas Revolution, a group of Texan rebels makes a desperate stand against the overwhelming forces of the Mexican army at the Alamo. As they face certain defeat, they must find the courage to defend their freedom and independence, becoming a symbol of sacrifice and heroism in the fight for Texas independence."
+        genre: "Western"
+        id: "the-alamos-stand"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-alamos-stand.jpg"
+        rating: "PG-13"
+        releaseDate: "2013-06-05"
+        tags: ["Texas Revolution", "Sacrifice", "Heroism", "Alamo"]
+        title: "The Alamo's Stand"
+      }
+      {
+        description: "In the unforgiving wilderness of the Pacific Northwest, a group of fur trappers struggles to survive against harsh weather, hostile Native American tribes, and ruthless rivals. As they navigate treacherous terrain and face constant danger, they must rely on their skills and their bonds of friendship to endure, becoming a symbol of the rugged spirit of the American frontier."
+        genre: "Western"
+        id: "the-wilderness-trail"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-wilderness-trail.jpg"
+        rating: "PG"
+        releaseDate: "1985-01-06"
+        tags: ["Fur Trappers", "Wilderness", "Survival", "Pacific Northwest"]
+        title: "The Wilderness Trail"
+      }
+      {
+        description: "During the tumultuous years of the California Republic, a diverse group of settlers struggles to build a new life in the face of political instability, economic hardship, and violent conflicts with Native American tribes. As they navigate these challenges, they must forge alliances and confront their own prejudices, becoming a symbol of the resilience and diversity of the American West."
+        genre: "Western"
+        id: "the-golden-dawn"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-golden-dawn.jpg"
+        rating: "PG-13"
+        releaseDate: "2013-01-06"
+        tags: ["California Republic", "Settlers", "Prejudice", "American West"]
+        title: "The Golden Dawn"
+      }
+      {
+        description: "In the heart of the Apache territory, a hardened cavalry scout is tasked with tracking down a renegade band of warriors led by a vengeful chief. As he pursues them across the treacherous desert, he must confront his own prejudices and respect for the Native American way of life, leading to a climactic showdown that will determine the fate of both cultures."
+        genre: "Western"
+        id: "the-painted-desert"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-painted-desert.jpg"
+        rating: "R"
+        releaseDate: "1987-10-30"
+        tags: ["Apache", "Cavalry", "Respect", "Desert"]
+        title: "The Painted Desert"
+      }
+      {
+        description: "A group of woodland creatures bands together to protect their forest home from a greedy developer. They must use their unique talents and learn to work together to save the only world they've ever known."
+        genre: "Animation"
+        id: "whispers-of-the-woods"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/whispers-of-the-woods.jpg"
+        rating: "G"
+        releaseDate: "1981-04-28"
+        tags: ["animals", "forest", "environment", "teamwork", "1980s"]
+        title: "Whispers of the Woods"
+      }
+      {
+        description: "When a young girl discovers a magical paintbrush, she brings her drawings to life. However, she soon learns that with great power comes great responsibility as her creations cause chaos in her town."
+        genre: "Animation"
+        id: "penelopes-palette"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/penelopes-palette.jpg"
+        rating: "PG"
+        releaseDate: "1983-09-02"
+        tags: ["magic", "art", "responsibility", "friendship", "1980s"]
+        title: "Penelope's Palette"
+      }
+      {
+        description: "A group of misfit toys, rejected by their owners, embarks on a journey to find a place where they truly belong. Along the way, they discover the meaning of friendship and the importance of self-acceptance."
+        genre: "Animation"
+        id: "the-misfit-brigade"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-misfit-brigade.jpg"
+        rating: "G"
+        releaseDate: "2011-12-23"
+        tags: ["toys", "friendship", "acceptance", "adventure", "family"]
+        title: "The Misfit Brigade"
+      }
+      {
+        description: "In a world powered by dreams, a young dreamer must confront a nightmare that threatens to consume everything. He teams up with a band of quirky dream guardians to protect the balance between dreams and reality."
+        genre: "Animation"
+        id: "dream-weaver"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/dream-weaver.jpg"
+        rating: "PG"
+        releaseDate: "2000-02-27"
+        tags: ["dreams", "nightmares", "fantasy", "adventure", "imagination"]
+        title: "Dream Weaver"
+      }
+      {
+        description: "In a world where letters are alive, a young 'A' must learn to overcome her insecurities and discover her worth in order to help the other letters form meaningful words and sentences."
+        genre: "Animation"
+        id: "the-alphabet-adventure"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/the-alphabet-adventure.jpg"
+        rating: "G"
+        releaseDate: "2001-03-29"
+        tags: [
+          "letters"
+          "friendship"
+          "self-discovery"
+          "language"
+          "imagination"
+        ]
+        title: "The Alphabet Adventure"
+      }
+      {
+        description: "When a young dragon's egg is accidentally delivered to the wrong family, a group of unlikely friends must come together to return the egg to its rightful home before it hatches."
+        genre: "Animation"
+        id: "dragons-delivery"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/dragons-delivery.jpg"
+        rating: "G"
+        releaseDate: "2023-03-09"
+        tags: ["dragons", "friendship", "adventure", "family", "fantasy"]
+        title: "Dragon's Delivery"
+      }
+      {
+        description: "In a bustling metropolis, four aspiring musicians – Maya, a struggling songwriter, Leah, a talented violinist, Evelyn, a soulful guitarist, and Stella, a powerful vocalist – come together to form a band. They navigate the challenges of the music industry, personal conflicts, and the pressures of fame as they strive to achieve their dreams."
+        genre: "Musical"
+        id: "harmonys-edge"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/harmonys-edge.jpg"
+        rating: "PG"
+        releaseDate: "2000-11-06"
+        tags: ["band", "music industry", "dreams", "friendship", "fame"]
+        title: "Harmony's Edge"
+      }
+      {
+        description: "Set against the backdrop of a prestigious performing arts academy, 'Stage Dreams' follows four freshmen – Wesley, Hazel, Connor, and Carter – as they navigate the cutthroat world of competitive dance, singing, and acting. They must overcome personal insecurities and fierce rivalries to prove their worth and achieve their dreams of stardom."
+        genre: "Musical"
+        id: "stage-dreams"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/stage-dreams.jpg"
+        rating: "PG-13"
+        releaseDate: "2019-11-25"
+        tags: ["performing arts", "academy", "rivalry", "dreams", "stardom"]
+        title: "Stage Dreams"
+      }
+      {
+        description: "In a whimsical town where music fills the air, a young aspiring composer, Jordan, struggles to find his voice. He meets Emilia, a spirited street performer, who inspires him to embrace his unique style and challenge the rigid traditions of the town's renowned music conservatory."
+        genre: "Musical"
+        id: "harmonic-heights"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/harmonic-heights.jpg"
+        rating: "G"
+        releaseDate: "2007-05-21"
+        tags: ["music", "tradition", "individuality", "town", "inspiration"]
+        title: "Harmonic Heights"
+      }
+      {
+        description: "Set in a bustling 1960s record label, Thomas, a talented but undiscovered singer-songwriter, dreams of making it big. When he teams up with Christopher, a charismatic producer, and Stella, a soulful backup singer, they create a sound that captivates the nation. But their newfound fame is threatened by personal conflicts and the pressures of the industry."
+        genre: "Musical"
+        id: "groove-generation"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/groove-generation.jpg"
+        rating: "PG-13"
+        releaseDate: "2014-06-10"
+        tags: ["1960s", "music industry", "fame", "record label", "dreams"]
+        title: "Groove Generation"
+      }
+      {
+        description: "In a quaint seaside village, Emily, a spirited fisherman's daughter, dreams of becoming a renowned opera singer. When a famous composer, William, arrives seeking inspiration, their paths collide, leading to a passionate romance and a journey of musical discovery."
+        genre: "Musical"
+        id: "coastal-aria"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/coastal-aria.jpg"
+        rating: "PG"
+        releaseDate: "2011-02-24"
+        tags: ["opera", "seaside", "romance", "dreams", "discovery"]
+        title: "Coastal Aria"
+      }
+      {
+        description: "Amidst the neon lights and pulsating rhythms of 1980s Miami, Finn, a streetwise dancer, falls for Owen, a wealthy socialite with a passion for music. Their love story unfolds against the backdrop of a vibrant dance competition, where they must overcome societal barriers and personal demons to achieve their dreams."
+        genre: "Musical"
+        id: "miami-rhapsody"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/miami-rhapsody.jpg"
+        rating: "R"
+        releaseDate: "1984-09-26"
+        tags: ["1980s", "miami", "dance", "romance", "competition"]
+        title: "Miami Rhapsody"
+      }
+      {
+        description: "When a group of terrorists seizes control of a high-tech skyscraper, a security expert must use his skills and knowledge to outwit them and rescue the hostages. He soon discovers a deeper conspiracy at play."
+        genre: "Action"
+        id: "vertical-siege"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/vertical-siege.jpg"
+        rating: "R"
+        releaseDate: "2015-11-24"
+        tags: ["terrorism", "skyscraper", "hostage rescue", "conspiracy"]
+        title: "Vertical Siege"
+      }
+      {
+        description: "A former special ops soldier is drawn back into action when his family is threatened by a powerful crime syndicate. He must use his lethal skills to protect them and bring down the organization from within."
+        genre: "Action"
+        id: "shadow-retribution"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/shadow-retribution.jpg"
+        rating: "R"
+        releaseDate: "2014-01-25"
+        tags: ["special ops", "crime syndicate", "family", "revenge"]
+        title: "Shadow Retribution"
+      }
+      {
+        description: "A group of treasure hunters ventures into a lost temple in search of a legendary artifact. They must navigate treacherous traps and fight off rival factions to claim the treasure for themselves."
+        genre: "Action"
+        id: "temple-raiders"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/temple-raiders.jpg"
+        rating: "PG"
+        releaseDate: "2000-04-19"
+        tags: ["treasure hunting", "lost temple", "artifact", "adventure"]
+        title: "Temple Raiders"
+      }
+      {
+        description: "In a bustling city known for its vibrant music scene, Ethan, a struggling street performer, crosses paths with Evelyn, a wealthy and influential music producer. Together, they embark on a journey to create a groundbreaking new sound, facing challenges from rival artists and the pressures of the music industry."
+        genre: "Musical"
+        id: "sonic-revolution"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/sonic-revolution.jpg"
+        rating: "PG-13"
+        releaseDate: "2016-10-08"
+        tags: [
+          "music industry"
+          "street performer"
+          "producer"
+          "rivalry"
+          "new sound"
+        ]
+        title: "Sonic Revolution"
+      }
+      {
+        description: "Noah, a talented but insecure pianist, dreams of performing on the grand stage of the city's renowned concert hall. When he meets Emilia, a free-spirited violinist, she encourages him to overcome his fears and embrace his unique musical style. Together, they form an unlikely duo and embark on a journey to conquer their insecurities and achieve their dreams."
+        genre: "Musical"
+        id: "harmonic-hearts"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/harmonic-hearts.jpg"
+        rating: "G"
+        releaseDate: "2008-10-02"
+        tags: ["piano", "violin", "insecurity", "duo", "dreams"]
+        title: "Harmonic Hearts"
+      }
+      {
+        description: "Set in the glamorous world of 1980s Broadway, 'Spotlight Dreams' follows Ava, a rising starlet, and Hazel, a seasoned performer, as they compete for the leading role in a highly anticipated new musical. As their rivalry intensifies, they must confront personal demons and make difficult choices to achieve their dreams of stardom."
+        genre: "Musical"
+        id: "spotlight-dreams"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/spotlight-dreams.jpg"
+        rating: "R"
+        releaseDate: "1980-04-24"
+        tags: ["broadway", "1980s", "rivalry", "stardom", "dreams"]
+        title: "Spotlight Dreams"
+      }
+      {
+        description: "Set in a small, conservative town, 'Footloose Fever' follows Jayden, a rebellious teenager with a passion for dancing, and Henry, a local minister's son. They must overcome prejudice and resistance to organize a dance, bringing joy and freedom to their repressed community."
+        genre: "Musical"
+        id: "footloose-fever"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/footloose-fever.jpg"
+        rating: "PG"
+        releaseDate: "1987-02-09"
+        tags: ["town", "freedom", "dance", "community", "passion"]
+        title: "Footloose Fever"
+      }
+      {
+        description: "A team of highly skilled agents is tasked with stopping a rogue scientist from unleashing a deadly bioweapon on the world. Their mission takes them across the globe, from bustling cities to remote research facilities."
+        genre: "Action"
+        id: "biohazard-protocol"
+        posterUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/movies/biohazard-protocol.jpg"
+        rating: "PG-13"
+        releaseDate: "2008-05-05"
+        tags: ["bioweapon", "rogue scientist", "global mission", "espionage"]
+        title: "Biohazard Protocol"
+      }
+    ]
+  )
+  actor_insertMany(
+    data: [
+      {
+        birthDate: "1940-07-21"
+        id: "madelyn-lewis"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/madelyn-lewis.jpg"
+        name: "Madelyn Lewis"
+      }
+      {
+        birthDate: "1985-10-13"
+        id: "eleanor-evans"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/eleanor-evans.jpg"
+        name: "Eleanor Evans"
+      }
+      {
+        birthDate: "1966-12-18"
+        id: "natalie-gladys"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/natalie-gladys.jpg"
+        name: "Natalie Gladys"
+      }
+      {
+        birthDate: "1986-04-06"
+        id: "gianna-bernard"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/gianna-bernard.jpg"
+        name: "Gianna Bernard"
+      }
+      {
+        birthDate: "1964-02-29"
+        id: "gabriel-wellington"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/gabriel-wellington.jpg"
+        name: "Gabriel Wellington"
+      }
+      {
+        birthDate: "1984-12-11"
+        id: "elizabeth-doris"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/elizabeth-doris.jpg"
+        name: "Elizabeth Doris"
+      }
+      {
+        birthDate: "1980-08-18"
+        id: "anna-beatrice"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/anna-beatrice.jpg"
+        name: "Anna Beatrice"
+      }
+      {
+        birthDate: "1980-04-06"
+        id: "david-rogers"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/david-rogers.jpg"
+        name: "David Rogers"
+      }
+      {
+        birthDate: "1986-02-27"
+        id: "audrey-hoover"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/audrey-hoover.jpg"
+        name: "Audrey Hoover"
+      }
+      {
+        birthDate: "1951-09-08"
+        id: "maya-mcallister"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/maya-mcallister.jpg"
+        name: "Maya McAllister"
+      }
+      {
+        birthDate: "1986-07-28"
+        id: "alexander-gertrude"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/alexander-gertrude.jpg"
+        name: "Alexander Gertrude"
+      }
+      {
+        birthDate: "1990-02-24"
+        id: "stella-powell"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/stella-powell.jpg"
+        name: "Stella Powell"
+      }
+      {
+        birthDate: "1963-12-24"
+        id: "jonathan-olive"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/jonathan-olive.jpg"
+        name: "Jonathan Olive"
+      }
+      {
+        birthDate: "1991-02-14"
+        id: "asher-weber"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/asher-weber.jpg"
+        name: "Asher Weber"
+      }
+      {
+        birthDate: "1986-11-18"
+        id: "stella-alfred"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/stella-alfred.jpg"
+        name: "Stella Alfred"
+      }
+      {
+        birthDate: "1987-03-18"
+        id: "alexander-jefferson"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/alexander-jefferson.jpg"
+        name: "Alexander Jefferson"
+      }
+      {
+        birthDate: "1996-09-24"
+        id: "connor-monroe"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/connor-monroe.jpg"
+        name: "Connor Monroe"
+      }
+      {
+        birthDate: "1995-02-12"
+        id: "christopher-rodriguez"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/christopher-rodriguez.jpg"
+        name: "Christopher Rodriguez"
+      }
+      {
+        birthDate: "1980-10-22"
+        id: "julian-farrell"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/julian-farrell.jpg"
+        name: "Julian Farrell"
+      }
+      {
+        birthDate: "1999-08-03"
+        id: "madeline-edith"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/madeline-edith.jpg"
+        name: "Madeline Edith"
+      }
+      {
+        birthDate: "1978-01-12"
+        id: "isaac-hayes"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/isaac-hayes.jpg"
+        name: "Isaac Hayes"
+      }
+      {
+        birthDate: "1987-05-24"
+        id: "max-northrop"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/max-northrop.jpg"
+        name: "Max Northrop"
+      }
+      {
+        birthDate: "1983-10-17"
+        id: "grace-nelson"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/grace-nelson.jpg"
+        name: "Grace Nelson"
+      }
+      {
+        birthDate: "1976-06-05"
+        id: "jordan-raymond"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/jordan-raymond.jpg"
+        name: "Jordan Raymond"
+      }
+      {
+        birthDate: "1995-03-13"
+        id: "aubrey-wren"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/aubrey-wren.jpg"
+        name: "Aubrey Wren"
+      }
+      {
+        birthDate: "1968-09-06"
+        id: "matthew-bush"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/matthew-bush.jpg"
+        name: "Matthew Bush"
+      }
+      {
+        birthDate: "1982-01-09"
+        id: "addison-luna"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/addison-luna.jpg"
+        name: "Addison Luna"
+      }
+      {
+        birthDate: "1970-03-25"
+        id: "ethan-chapman"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/ethan-chapman.jpg"
+        name: "Ethan Chapman"
+      }
+      {
+        birthDate: "1980-07-25"
+        id: "eva-richardson"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/eva-richardson.jpg"
+        name: "Eva Richardson"
+      }
+      {
+        birthDate: "1991-12-22"
+        id: "daniel-clark"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/daniel-clark.jpg"
+        name: "Daniel Clark"
+      }
+      {
+        birthDate: "1990-05-17"
+        id: "lily-carol"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/lily-carol.jpg"
+        name: "Lily Carol"
+      }
+      {
+        birthDate: "1988-02-15"
+        id: "james-chapman"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/james-chapman.jpg"
+        name: "James Chapman"
+      }
+      {
+        birthDate: "1985-10-13"
+        id: "sofia-stephens"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/sofia-stephens.jpg"
+        name: "Sofia Stephens"
+      }
+      {
+        birthDate: "1973-10-17"
+        id: "zoe-ernest"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/zoe-ernest.jpg"
+        name: "Zoe Ernest"
+      }
+      {
+        birthDate: "1994-07-09"
+        id: "andrew-garcia"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/andrew-garcia.jpg"
+        name: "Andrew Garcia"
+      }
+      {
+        birthDate: "1976-12-22"
+        id: "dylan-theodore"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/dylan-theodore.jpg"
+        name: "Dylan Theodore"
+      }
+      {
+        birthDate: "1982-09-17"
+        id: "riley-hayes"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/riley-hayes.jpg"
+        name: "Riley Hayes"
+      }
+      {
+        birthDate: "1967-11-03"
+        id: "owen-marshall"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/owen-marshall.jpg"
+        name: "Owen Marshall"
+      }
+      {
+        birthDate: "1998-02-12"
+        id: "bella-wallace"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/bella-wallace.jpg"
+        name: "Bella Wallace"
+      }
+      {
+        birthDate: "2000-06-02"
+        id: "jayden-hugo"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/jayden-hugo.jpg"
+        name: "Jayden Hugo"
+      }
+      {
+        birthDate: "1986-03-28"
+        id: "violet-van-buren"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/violet-van-buren.jpg"
+        name: "Violet Van Buren"
+      }
+      {
+        birthDate: "1971-05-07"
+        id: "natalie-harrison"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/natalie-harrison.jpg"
+        name: "Natalie Harrison"
+      }
+      {
+        birthDate: "1941-01-01"
+        id: "hannah-donna"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/hannah-donna.jpg"
+        name: "Hannah Donna"
+      }
+      {
+        birthDate: "1995-10-07"
+        id: "lucas-ralph"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/lucas-ralph.jpg"
+        name: "Lucas Ralph"
+      }
+      {
+        birthDate: "1954-11-10"
+        id: "abigail-bernard"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/abigail-bernard.jpg"
+        name: "Abigail Bernard"
+      }
+      {
+        birthDate: "1973-01-15"
+        id: "amelia-clinton"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/amelia-clinton.jpg"
+        name: "Amelia Clinton"
+      }
+      {
+        birthDate: "1959-08-26"
+        id: "adam-sterling"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/adam-sterling.jpg"
+        name: "Adam Sterling"
+      }
+      {
+        birthDate: "1950-03-02"
+        id: "andrew-johnson"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/andrew-johnson.jpg"
+        name: "Andrew Johnson"
+      }
+      {
+        birthDate: "1956-11-24"
+        id: "grayson-agnes"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/grayson-agnes.jpg"
+        name: "Grayson Agnes"
+      }
+      {
+        birthDate: "1991-05-24"
+        id: "sadie-gardner"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/sadie-gardner.jpg"
+        name: "Sadie Gardner"
+      }
+      {
+        birthDate: "1978-09-08"
+        id: "jordan-fairchild"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/jordan-fairchild.jpg"
+        name: "Jordan Fairchild"
+      }
+      {
+        birthDate: "1976-09-06"
+        id: "genesis-arthur"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/genesis-arthur.jpg"
+        name: "Genesis Arthur"
+      }
+      {
+        birthDate: "1998-03-19"
+        id: "adam-gomez"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/adam-gomez.jpg"
+        name: "Adam Gomez"
+      }
+      {
+        birthDate: "1968-06-04"
+        id: "owen-davis"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/owen-davis.jpg"
+        name: "Owen Davis"
+      }
+      {
+        birthDate: "1973-06-26"
+        id: "sadie-norman"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/sadie-norman.jpg"
+        name: "Sadie Norman"
+      }
+      {
+        birthDate: "1965-06-29"
+        id: "nicholas-leroy"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/nicholas-leroy.jpg"
+        name: "Nicholas Leroy"
+      }
+      {
+        birthDate: "1977-02-16"
+        id: "benjamin-buchanan"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/benjamin-buchanan.jpg"
+        name: "Benjamin Buchanan"
+      }
+      {
+        birthDate: "1989-12-28"
+        id: "victoria-phillips"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/victoria-phillips.jpg"
+        name: "Victoria Phillips"
+      }
+      {
+        birthDate: "1960-09-14"
+        id: "sebastian-gray"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/sebastian-gray.jpg"
+        name: "Sebastian Gray"
+      }
+      {
+        birthDate: "1959-09-17"
+        id: "alice-carolyn"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/alice-carolyn.jpg"
+        name: "Alice Carolyn"
+      }
+      {
+        birthDate: "1973-11-07"
+        id: "violet-sage"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/violet-sage.jpg"
+        name: "Violet Sage"
+      }
+      {
+        birthDate: "1989-08-07"
+        id: "madelyn-william"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/madelyn-william.jpg"
+        name: "Madelyn William"
+      }
+      {
+        birthDate: "1972-08-01"
+        id: "samuel-martinez"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/samuel-martinez.jpg"
+        name: "Samuel Martinez"
+      }
+      {
+        birthDate: "1988-08-13"
+        id: "noah-graham"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/noah-graham.jpg"
+        name: "Noah Graham"
+      }
+      {
+        birthDate: "1988-05-14"
+        id: "sofia-harvey"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/sofia-harvey.jpg"
+        name: "Sofia Harvey"
+      }
+      {
+        birthDate: "1984-07-22"
+        id: "alice-barbara"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/alice-barbara.jpg"
+        name: "Alice Barbara"
+      }
+      {
+        birthDate: "1974-08-18"
+        id: "eleanor-chambers"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/eleanor-chambers.jpg"
+        name: "Eleanor Chambers"
+      }
+      {
+        birthDate: "1980-12-07"
+        id: "grayson-oscar"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/grayson-oscar.jpg"
+        name: "Grayson Oscar"
+      }
+      {
+        birthDate: "1968-12-10"
+        id: "josiah-baker"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/josiah-baker.jpg"
+        name: "Josiah Baker"
+      }
+      {
+        birthDate: "1986-08-05"
+        id: "lincoln-hazel"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/lincoln-hazel.jpg"
+        name: "Lincoln Hazel"
+      }
+      {
+        birthDate: "1987-10-02"
+        id: "aidan-brenda"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/aidan-brenda.jpg"
+        name: "Aidan Brenda"
+      }
+      {
+        birthDate: "1998-05-19"
+        id: "ella-alfred"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/ella-alfred.jpg"
+        name: "Ella Alfred"
+      }
+      {
+        birthDate: "1982-09-19"
+        id: "owen-atticus"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/owen-atticus.jpg"
+        name: "Owen Atticus"
+      }
+      {
+        birthDate: "1984-11-07"
+        id: "emilia-willard"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/emilia-willard.jpg"
+        name: "Emilia Willard"
+      }
+      {
+        birthDate: "1960-09-11"
+        id: "layla-wood"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/layla-wood.jpg"
+        name: "Layla Wood"
+      }
+      {
+        birthDate: "1986-03-06"
+        id: "brooklyn-jackson"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/brooklyn-jackson.jpg"
+        name: "Brooklyn Jackson"
+      }
+      {
+        birthDate: "1989-05-08"
+        id: "nicholas-kelly"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/nicholas-kelly.jpg"
+        name: "Nicholas Kelly"
+      }
+      {
+        birthDate: "1988-12-20"
+        id: "joshua-angela"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/joshua-angela.jpg"
+        name: "Joshua Angela"
+      }
+      {
+        birthDate: "1990-08-06"
+        id: "lily-caspian"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/lily-caspian.jpg"
+        name: "Lily Caspian"
+      }
+      {
+        birthDate: "1982-12-11"
+        id: "christopher-livingston"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/christopher-livingston.jpg"
+        name: "Christopher Livingston"
+      }
+      {
+        birthDate: "1980-05-25"
+        id: "leo-vincent"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/leo-vincent.jpg"
+        name: "Leo Vincent"
+      }
+      {
+        birthDate: "1997-02-23"
+        id: "angel-gardner"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/angel-gardner.jpg"
+        name: "Angel Gardner"
+      }
+      {
+        birthDate: "1981-07-02"
+        id: "eli-jennings"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/eli-jennings.jpg"
+        name: "Eli Jennings"
+      }
+      {
+        birthDate: "1981-01-19"
+        id: "thomas-gardner"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/thomas-gardner.jpg"
+        name: "Thomas Gardner"
+      }
+      {
+        birthDate: "2000-01-01"
+        id: "addison-reyes"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/addison-reyes.jpg"
+        name: "Addison Reyes"
+      }
+      {
+        birthDate: "1987-12-25"
+        id: "leah-foster"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/leah-foster.jpg"
+        name: "Leah Foster"
+      }
+      {
+        birthDate: "1992-09-29"
+        id: "claire-campbell"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/claire-campbell.jpg"
+        name: "Claire Campbell"
+      }
+      {
+        birthDate: "1988-07-04"
+        id: "paisley-price"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/paisley-price.jpg"
+        name: "Paisley Price"
+      }
+      {
+        birthDate: "1988-09-08"
+        id: "jack-jennings"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/jack-jennings.jpg"
+        name: "Jack Jennings"
+      }
+      {
+        birthDate: "1994-05-13"
+        id: "thomas-cleveland"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/thomas-cleveland.jpg"
+        name: "Thomas Cleveland"
+      }
+      {
+        birthDate: "1984-11-10"
+        id: "maya-diaz"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/maya-diaz.jpg"
+        name: "Maya Diaz"
+      }
+      {
+        birthDate: "2000-06-13"
+        id: "grace-lincoln"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/grace-lincoln.jpg"
+        name: "Grace Lincoln"
+      }
+      {
+        birthDate: "1991-02-19"
+        id: "leo-hamilton"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/leo-hamilton.jpg"
+        name: "Leo Hamilton"
+      }
+      {
+        birthDate: "1986-05-09"
+        id: "eli-saunders"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/eli-saunders.jpg"
+        name: "Eli Saunders"
+      }
+      {
+        birthDate: "1947-11-16"
+        id: "ella-dixon"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/ella-dixon.jpg"
+        name: "Ella Dixon"
+      }
+      {
+        birthDate: "1987-09-12"
+        id: "joseph-coolidge"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/joseph-coolidge.jpg"
+        name: "Joseph Coolidge"
+      }
+      {
+        birthDate: "1994-10-10"
+        id: "joseph-wren"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/joseph-wren.jpg"
+        name: "Joseph Wren"
+      }
+      {
+        birthDate: "1976-06-22"
+        id: "layla-jenkins"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/layla-jenkins.jpg"
+        name: "Layla Jenkins"
+      }
+      {
+        birthDate: "1981-09-04"
+        id: "ryan-trump"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/ryan-trump.jpg"
+        name: "Ryan Trump"
+      }
+      {
+        birthDate: "1983-01-22"
+        id: "asher-newman"
+        imageUrl: "https://storage.googleapis.com/next25-movies.firebasestorage.app/images/actors/asher-newman.jpg"
+        name: "Asher Newman"
+      }
+    ]
+  )
+  role_insertMany(
+    data: [
+      {
+        actorId: "aidan-harris"
+        character: "Jake Stratton"
+        description: "A hardened ex-soldier haunted by his past, seeking redemption through his final mission."
+        movieId: "silent-vector"
+      }
+      {
+        actorId: "amelia-roosevelt"
+        character: "Agent Riley Carter"
+        description: "A brilliant but inexperienced agent, eager to prove herself in the field."
+        movieId: "silent-vector"
+      }
+      {
+        actorId: "ryan-mckinley"
+        character: "Viktor Volkov"
+        description: "A ruthless arms dealer and mastermind behind the virus theft."
+        movieId: "silent-vector"
+      }
+      {
+        actorId: "wesley-stanley"
+        character: "Director Thompson"
+        description: "The stern and calculating head of the intelligence agency, overseeing the operation."
+        movieId: "silent-vector"
+      }
+      {
+        actorId: "samuel-fitzgerald"
+        character: "Marcus 'Vanguard' Cole"
+        description: "The seasoned leader of the mercenary team, known for his strategic mind and combat skills."
+        movieId: "fortress-breach"
+      }
+      {
+        actorId: "dylan-jefferson"
+        character: "Zara 'Specter' Khan"
+        description: "A stealth specialist and expert in infiltration and espionage."
+        movieId: "fortress-breach"
+      }
+      {
+        actorId: "owen-roberts"
+        character: "Dr. Alistair Reed"
+        description: "The kidnapped scientist, possessing vital knowledge sought by dangerous factions."
+        movieId: "fortress-breach"
+      }
+      {
+        actorId: "audrey-sharon"
+        character: "General Petrov"
+        description: "The ruthless commander of the fortress, determined to protect the weapon at all costs."
+        movieId: "fortress-breach"
+      }
+      {
+        actorId: "violet-olive"
+        character: "Kira 'Cipher' Petrova"
+        description: "A brilliant hacker with a rebellious spirit, determined to expose the truth."
+        movieId: "digital-uprising"
+      }
+      {
+        actorId: "ethan-sullivan"
+        character: "Commander Rhys"
+        description: "The leader of the rebel group, a charismatic and battle-hardened warrior."
+        movieId: "digital-uprising"
+      }
+      {
+        actorId: "sebastian-gray"
+        character: "Director Thorne"
+        description: "The head of the oppressive government, obsessed with maintaining control."
+        movieId: "digital-uprising"
+      }
+      {
+        actorId: "genesis-arthur"
+        character: "Agent Anya Volkov"
+        description: "A conflicted government agent, torn between loyalty and morality."
+        movieId: "digital-uprising"
+      }
+      {
+        actorId: "adrian-florence"
+        character: "Detective Jack Rourke"
+        description: "A by-the-book cop who believes in following the rules, despite his moral flexibility."
+        movieId: "sunset-justice"
+      }
+      {
+        actorId: "charlotte-arnold"
+        character: "Maria 'Shadow' Vargas"
+        description: "A street-smart bounty hunter with a knack for getting into trouble."
+        movieId: "sunset-justice"
+      }
+      {
+        actorId: "wyatt-harrison"
+        character: "Carlos 'El Patron' Ramirez"
+        description: "The ruthless leader of the drug cartel, with a penchant for violence."
+        movieId: "sunset-justice"
+      }
+      {
+        actorId: "amelia-sullivan"
+        character: "Captain Emily Carter"
+        description: "The tough but fair captain of the police precinct, trying to keep her city safe."
+        movieId: "sunset-justice"
+      }
+      {
+        actorId: "madelyn-carol"
+        character: "Sarah"
+        description: "A young woman with a mysterious power, pursued by those who seek to exploit her."
+        movieId: "wasteland-exodus"
+      }
+      {
+        actorId: "max-harvey"
+        character: "Kael"
+        description: "A hardened warrior haunted by his past, protecting Sarah at all costs."
+        movieId: "wasteland-exodus"
+      }
+      {
+        actorId: "allison-johnson"
+        character: "Ravage"
+        description: "The leader of the ruthless raiders, determined to capture Sarah."
+        movieId: "wasteland-exodus"
+      }
+      {
+        actorId: "ella-brooks"
+        character: "Elder Maya"
+        description: "The wise leader of the safe haven, guiding Kael and Sarah on their journey."
+        movieId: "wasteland-exodus"
+      }
+      {
+        actorId: "brandon-atkinson"
+        character: "Li Wei"
+        description: "A skilled martial artist, determined to protect his village from corruption."
+        movieId: "iron-will"
+      }
+      {
+        actorId: "victoria-milo"
+        character: "Mei Ling"
+        description: "A resourceful villager who supports Li Wei in his fight."
+        movieId: "iron-will"
+      }
+      {
+        actorId: "jayden-chapman"
+        character: "Mr. Cheng"
+        description: "The ruthless businessman, seeking to exploit the village for his own gain."
+        movieId: "iron-will"
+      }
+      {
+        actorId: "sadie-collins"
+        character: "Master Chen"
+        description: "The wise and respected martial arts teacher, mentoring Li Wei."
+        movieId: "iron-will"
+      }
+      {
+        actorId: "sofia-white"
+        character: "Eva Rostova"
+        description: "A determined security expert, forced to use all her skills to save the hostages."
+        movieId: "vertical-siege"
+      }
+      {
+        actorId: "adrian-edward"
+        character: "Marcus Decker"
+        description: "The ruthless leader of the terrorist group, with a hidden agenda."
+        movieId: "vertical-siege"
+      }
+      {
+        actorId: "josiah-baker"
+        character: "Agent Ben Carter"
+        description: "A federal agent, trying to assist Eva from the outside."
+        movieId: "vertical-siege"
+      }
+      {
+        actorId: "samantha-chandler"
+        character: "Sophia Martinez"
+        description: "One of the hostages, a brilliant scientist with crucial information."
+        movieId: "vertical-siege"
+      }
+      {
+        actorId: "ava-scott"
+        character: "John Reeves"
+        description: "A former special ops soldier, forced to return to his old life to protect his family."
+        movieId: "shadow-retribution"
+      }
+      {
+        actorId: "riley-burton"
+        character: "Elena Reeves"
+        description: "John's wife, a strong and intelligent woman who becomes a target."
+        movieId: "shadow-retribution"
+      }
+      {
+        actorId: "leo-green"
+        character: "Victor Martel"
+        description: "The ruthless leader of the crime syndicate, with a personal vendetta against John."
+        movieId: "shadow-retribution"
+      }
+      {
+        actorId: "stella-clayton"
+        character: "Agent Sarah Connor"
+        description: "A federal agent, secretly helping John from the inside."
+        movieId: "shadow-retribution"
+      }
+      {
+        actorId: "audrey-burton"
+        character: "Alex Quinn"
+        description: "The adventurous leader of the treasure hunting team, known for her courage and intellect."
+        movieId: "temple-raiders"
+      }
+      {
+        actorId: "benjamin-buchanan"
+        character: "Jake 'Mac' MacMillan"
+        description: "A skilled tracker and survival expert, aiding Alex on her quest."
+        movieId: "temple-raiders"
+      }
+      {
+        actorId: "wyatt-ferguson"
+        character: "Isabella Rossi"
+        description: "A cunning rival treasure hunter, determined to claim the artifact for herself."
+        movieId: "temple-raiders"
+      }
+      {
+        actorId: "riley-albert"
+        character: "Professor Armitage"
+        description: "An expert on ancient history, providing invaluable knowledge to the team."
+        movieId: "temple-raiders"
+      }
+      {
+        actorId: "audrey-kathleen"
+        character: "Sarah Walker"
+        description: "A top-notch field agent, known for her combat skills and strategic thinking."
+        movieId: "biohazard-protocol"
+      }
+      {
+        actorId: "layla-clarence"
+        character: "Dr. Mark Olsen"
+        description: "A brilliant scientist, responsible for creating the bioweapon."
+        movieId: "biohazard-protocol"
+      }
+      {
+        actorId: "adam-carolyn"
+        character: "Commander Jack Riley"
+        description: "The leader of the team, tasked with stopping the rogue scientist."
+        movieId: "biohazard-protocol"
+      }
+      {
+        actorId: "adrian-taylor"
+        character: "Agent Emily Stone"
+        description: "A resourceful intelligence analyst, providing support to the team in the field."
+        movieId: "biohazard-protocol"
+      }
+      {
+        actorId: "jayden-chapman"
+        character: "Liam"
+        description: "A resourceful leader, guiding the survivors through the harsh environment."
+        movieId: "ember-dawn"
+      }
+      {
+        actorId: "harper-richardson"
+        character: "Maya"
+        description: "A skilled medic, providing care and support to the group."
+        movieId: "ember-dawn"
+      }
+      {
+        actorId: "owen-vaughan"
+        character: "Jaxon"
+        description: "A hardened warrior, protecting the group from external threats."
+        movieId: "ember-dawn"
+      }
+      {
+        actorId: "hannah-southgate"
+        character: "Ava"
+        description: "A resourceful engineer, helping the group navigate the dangerous terrain."
+        movieId: "ember-dawn"
+      }
+      {
+        actorId: "eli-jennings"
+        character: "Alex 'Zero' Ryder"
+        description: "The leader of the hacker group, known for his coding skills and determination."
+        movieId: "digital-override"
+      }
+      {
+        actorId: "ella-coolidge"
+        character: "Sarah 'Echo' Chen"
+        description: "A cybersecurity expert, helping the team penetrate the corporation's defenses."
+        movieId: "digital-override"
+      }
+      {
+        actorId: "luna-alfred"
+        character: "David 'Glitch' Jones"
+        description: "A hardware specialist, providing the team with the tools they need to succeed."
+        movieId: "digital-override"
+      }
+      {
+        actorId: "liam-jesse"
+        character: "Mr. Harrison"
+        description: "The CEO of the corporation, responsible for creating the dangerous AI."
+        movieId: "digital-override"
+      }
+      {
+        actorId: "jayden-chapman"
+        character: "Jack 'Reaper' Connor"
+        description: "An ex-cop, seeking revenge for the murder of his family."
+        movieId: "renegade-rider"
+      }
+      {
+        actorId: "bella-earl"
+        character: "Maria"
+        description: "A mysterious woman, involved in the gang's activities."
+        movieId: "renegade-rider"
+      }
+      {
+        actorId: "dylan-morgan"
+        character: "Vince 'Viper' Rossi"
+        description: "The ruthless leader of the motorcycle gang."
+        movieId: "renegade-rider"
+      }
+      {
+        actorId: "samantha-roy"
+        character: "Detective Lisa Miller"
+        description: "A police officer, trying to bring down the gang from the outside."
+        movieId: "renegade-rider"
+      }
+      {
+        actorId: "isaac-willow"
+        character: "Marcus 'Phoenix' Stone"
+        description: "The leader of the rebel group, inspiring others to fight for freedom."
+        movieId: "freedoms-dawn"
+      }
+      {
+        actorId: "christopher-garcia"
+        character: "Eva 'Shadow' Ramirez"
+        description: "A stealth expert, helping the rebels infiltrate the government's systems."
+        movieId: "freedoms-dawn"
+      }
+      {
+        actorId: "violet-oscar"
+        character: "General Thorne"
+        description: "The ruthless leader of the tyrannical government."
+        movieId: "freedoms-dawn"
+      }
+      {
+        actorId: "owen-marvin"
+        character: "Dr. Emily Carter"
+        description: "A scientist, secretly helping the rebels from within the government."
+        movieId: "freedoms-dawn"
+      }
+      {
+        actorId: "alice-carolyn"
+        character: "Captain Sarah Johnson"
+        description: "The leader of the elite team, known for her strategic mind and combat skills."
+        movieId: "nuclear-strike-force"
+      }
+      {
+        actorId: "eli-cook"
+        character: "Sergeant Mark Taylor"
+        description: "A seasoned soldier, providing expertise and support to the team."
+        movieId: "nuclear-strike-force"
+      }
+      {
+        actorId: "finn-whitlock"
+        character: "Khaled Al-Masri"
+        description: "The leader of the terrorist organization, seeking to acquire nuclear weapons."
+        movieId: "nuclear-strike-force"
+      }
+      {
+        actorId: "wyatt-nixon"
+        character: "Agent Emily White"
+        description: "An intelligence officer, providing vital information to the team."
+        movieId: "nuclear-strike-force"
+      }
+      {
+        actorId: "david-rogers"
+        character: "Jake 'Phoenix' Riles"
+        description: "The resourceful leader of the group, protecting others against infected."
+        movieId: "viral-chaos"
+      }
+      {
+        actorId: "savannah-helen"
+        character: "Dr. Emily"
+        description: "A brilliant scientist, desperate to find a cure for the virus."
+        movieId: "viral-chaos"
+      }
+      {
+        actorId: "benjamin-agnes"
+        character: "Colonel Vance"
+        description: "The ruthless leader of a faction, seeking to control the city."
+        movieId: "viral-chaos"
+      }
+      {
+        actorId: "leah-foster"
+        character: "Maya"
+        description: "A skilled survivalist, helping the group navigate the dangerous streets."
+        movieId: "viral-chaos"
+      }
+      {
+        actorId: "joshua-livingston"
+        character: "Mark 'Hawk' Hawkins"
+        description: "A former military operative, trying to protect his family from his past."
+        movieId: "shadows-return"
+      }
+      {
+        actorId: "robert-arthur"
+        character: "Lisa"
+        description: "Mark's wife, unaware of his dangerous past."
+        movieId: "shadows-return"
+      }
+      {
+        actorId: "samantha-roy"
+        character: "Ricardo"
+        description: "The ruthless leader of the enemies from Mark's past."
+        movieId: "shadows-return"
+      }
+      {
+        actorId: "adrian-fillmore"
+        character: "Agent Miller"
+        description: "A federal agent, trying to uncover the truth about Mark's past."
+        movieId: "shadows-return"
+      }
+      {
+        actorId: "layla-jenkins"
+        character: "Alex 'Shadow' Ramsey"
+        description: "A skilled art thief, hired to retrieve a priceless artifact."
+        movieId: "priceless-pursuit"
+      }
+      {
+        actorId: "alexander-leo"
+        character: "Isabella"
+        description: "A mysterious woman, involved in the theft of the artifact."
+        movieId: "priceless-pursuit"
+      }
+      {
+        actorId: "nora-walker"
+        character: "Mr. Blackwood"
+        description: "The dangerous criminal behind the theft."
+        movieId: "priceless-pursuit"
+      }
+      {
+        actorId: "jack-cooper"
+        character: "Agent Walker"
+        description: "A federal agent, trying to track down the art thief."
+        movieId: "priceless-pursuit"
+      }
+      {
+        actorId: "ethan-sullivan"
+        character: "Marcus"
+        description: "The leader of the teenagers, inspiring others to fight back."
+        movieId: "street-justice"
+      }
+      {
+        actorId: "bella-polk"
+        character: "Latoya"
+        description: "A resourceful strategist, helping the group plan their defense."
+        movieId: "street-justice"
+      }
+      {
+        actorId: "adam-adams"
+        character: "Raze"
+        description: "The ruthless leader of the gang, terrorizing the neighborhood."
+        movieId: "street-justice"
+      }
+      {
+        actorId: "william-henry"
+        character: "Mr. Johnson"
+        description: "A community leader, supporting the teenagers in their fight."
+        movieId: "street-justice"
+      }
+      {
+        actorId: "emma-hugo"
+        character: "Jake 'Velocity' Adams"
+        description: "The skilled race car driver, risking everything to save his family."
+        movieId: "velocity-run"
+      }
+      {
+        actorId: "eva-martha"
+        character: "Sarah"
+        description: "Jake's wife, kidnapped and used as leverage against him."
+        movieId: "velocity-run"
+      }
+      {
+        actorId: "ryan-mckinley"
+        character: "Victor Martel"
+        description: "The ruthless organizer of the underground race."
+        movieId: "velocity-run"
+      }
+      {
+        actorId: "riley-pennington"
+        character: "Michelle"
+        description: "A rival race car driver, competing against Jake in the dangerous race."
+        movieId: "velocity-run"
+      }
+      {
+        actorId: "adrian-fillmore"
+        character: "Jake 'Swiftfoot' Riley"
+        description: "A resourceful and quick-witted young explorer, driven by the thrill of discovery."
+        movieId: "the-city-of-gold"
+      }
+      {
+        actorId: "joshua-livingston"
+        character: "Dr. Alistair Finch"
+        description: "A seasoned archaeologist and expert in ancient civilizations, providing the team with invaluable knowledge."
+        movieId: "the-city-of-gold"
+      }
+      {
+        actorId: "aubrey-raymond"
+        character: "Isabella 'Izzy' Rodriguez"
+        description: "A skilled survivalist and local guide, helping the group navigate the dangers of the rainforest."
+        movieId: "the-city-of-gold"
+      }
+      {
+        actorId: "emilia-dorothy"
+        character: "Maria Esperanza"
+        description: "The mysterious heiress of a tribe whose ancestors once protected the lost city."
+        movieId: "the-city-of-gold"
+      }
+      {
+        actorId: "lincoln-hazel"
+        character: "Dr. Marcus Thorne"
+        description: "A brilliant but eccentric geophysicist, the mastermind behind the mission."
+        movieId: "core-command"
+      }
+      {
+        actorId: "maya-miller"
+        character: "Commander Eva Rostova"
+        description: "The skilled and determined commander of the subterranean vessel."
+        movieId: "core-command"
+      }
+      {
+        actorId: "daniel-sandra"
+        character: "Jackson 'Jax' Moore"
+        description: "A rugged and experienced engineer, responsible for maintaining the vessel's systems."
+        movieId: "core-command"
+      }
+      {
+        actorId: "leo-foster"
+        character: "Dr. Aris Thorne"
+        description: "The rebellious genius who provides the tech for the team to burrow into the earth."
+        movieId: "core-command"
+      }
+      {
+        actorId: "owen-carol"
+        character: "Captain 'Storm' Walker"
+        description: "A charming and roguish pirate hunter, driven by the thrill of the chase."
+        movieId: "the-sea-serpents-treasure"
+      }
+      {
+        actorId: "benjamin-clinton"
+        character: "Professor Eleanor Ainsworth"
+        description: "A brilliant historian and expert on pirates, seeking to uncover the truth behind the legend."
+        movieId: "the-sea-serpents-treasure"
+      }
+      {
+        actorId: "wesley-roosevelt"
+        character: "'One-Eyed' Jack"
+        description: "The ruthless leader of a notorious pirate gang, determined to claim the treasure for himself."
+        movieId: "the-sea-serpents-treasure"
+      }
+      {
+        actorId: "david-patricia"
+        character: "Bartolomeu"
+        description: "An elder of an island tribe and descendant of the original owner of the treasure."
+        movieId: "the-sea-serpents-treasure"
+      }
+      {
+        actorId: "stella-thomas"
+        character: "Alice Hawthorne"
+        description: "A bookish and imaginative young woman, thrust into a world beyond her wildest dreams."
+        movieId: "the-bookbinders-secret"
+      }
+      {
+        actorId: "jordan-jenkins"
+        character: "Finnian"
+        description: "A wise and mischievous sprite, guiding Alice on her quest."
+        movieId: "the-bookbinders-secret"
+      }
+      {
+        actorId: "owen-jefferson"
+        character: "The Shadow King"
+        description: "A malevolent force seeking to plunge the magical realm into darkness."
+        movieId: "the-bookbinders-secret"
+      }
+      {
+        actorId: "gianna-chapman"
+        character: "Rowena"
+        description: "The last member of the original royal family of the magical realm."
+        movieId: "the-bookbinders-secret"
+      }
+      {
+        actorId: "isabella-michelle"
+        character: "Maya"
+        description: "A resilient and resourceful leader, determined to protect her people."
+        movieId: "the-last-oasis"
+      }
+      {
+        actorId: "ariana-bell"
+        character: "Kai"
+        description: "A skilled tracker and hunter, with a deep knowledge of the ravaged landscape."
+        movieId: "the-last-oasis"
+      }
+      {
+        actorId: "luna-wallace"
+        character: "Rhea"
+        description: "The elder of the group who is in touch with the old ways."
+        movieId: "the-last-oasis"
+      }
+      {
+        actorId: "natalie-harris"
+        character: "Jez"
+        description: "The brash, gun-slinging warrior who has a personal vendetta against a local warlord."
+        movieId: "the-last-oasis"
+      }
+    ]
+  )
+  user_insertMany(
+    data: [
+      {
+        displayName: "Michael Bleigh"
+        imageUrl: "https://lh3.googleusercontent.com/a/ACg8ocLW9DlR4sIjFaLnkX8HUUT5-_mQMQgwBYHRp4b4viqwc9_yt9cJkA=s96-c"
+        uid: "N2uOISHlNyRYt5LMSW15mgPko6s2"
+        username: "mbleigh"
+      }
+      {
+        displayName: "Jan-Felix Schmakeit"
+        imageUrl: "https://lh3.googleusercontent.com/a/ACg8ocKW7RsICOXUIpK10AVSqXG9Qy4qgAZtykhqyO2vglW6gSv36gAa=s96-c"
+        uid: "uZxLXygCMFfKoyCZKOcP2256lp42"
+        username: "jfschmakeit"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "indieFilmFan"
+        username: "indieFilmFan"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "behindTheReel"
+        username: "behindTheReel"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theScreenScene"
+        username: "theScreenScene"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieNerd91"
+        username: "movieNerd91"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "filmCritic4Hire"
+        username: "filmCritic4Hire"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "spoilerSentinel"
+        username: "spoilerSentinel"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theMoviegoer"
+        username: "theMoviegoer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "reelReviewer"
+        username: "reelReviewer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinematicJunkie"
+        username: "cinematicJunkie"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "popcornCritic"
+        username: "popcornCritic"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "digitalFilmBuff"
+        username: "digitalFilmBuff"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theReviewRoundup"
+        username: "theReviewRoundup"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "pictureThisReviews"
+        username: "pictureThisReviews"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "screenGazer"
+        username: "screenGazer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMinute"
+        username: "movieMinute"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theFilmFactor"
+        username: "theFilmFactor"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "pixelPerfectFilm"
+        username: "pixelPerfectFilm"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "flickerFacts"
+        username: "flickerFacts"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaSavvy"
+        username: "cinemaSavvy"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "scriptReader2000"
+        username: "scriptReader2000"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "plotPerfectionist"
+        username: "plotPerfectionist"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theTakeAway"
+        username: "theTakeAway"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "premierePartyPro"
+        username: "premierePartyPro"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMaestro"
+        username: "movieMaestro"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "rewindReview"
+        username: "rewindReview"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaScribe"
+        username: "cinemaScribe"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "frameRateFanatic"
+        username: "frameRateFanatic"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "focusFeaturesFan"
+        username: "focusFeaturesFan"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "boxOfficeBuster"
+        username: "boxOfficeBuster"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "silverScreenStories"
+        username: "silverScreenStories"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "indieFilmFinder"
+        username: "indieFilmFinder"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "thePlotThickens"
+        username: "thePlotThickens"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "screenSavant77"
+        username: "screenSavant77"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaExplorer"
+        username: "cinemaExplorer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMindset"
+        username: "movieMindset"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theRedCarpetReview"
+        username: "theRedCarpetReview"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "filmFanaticForever"
+        username: "filmFanaticForever"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theFlickeringScreen"
+        username: "theFlickeringScreen"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaQuest"
+        username: "cinemaQuest"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMogul23"
+        username: "movieMogul23"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "reelWisdom"
+        username: "reelWisdom"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "projectorPlay"
+        username: "projectorPlay"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "filmFicionado"
+        username: "filmFicionado"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "criticOnTheCouch"
+        username: "criticOnTheCouch"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "screenScribe7"
+        username: "screenScribe7"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinematicVoyage"
+        username: "cinematicVoyage"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theMovieVerse"
+        username: "theMovieVerse"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "pixelPerspective"
+        username: "pixelPerspective"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "flickerReport"
+        username: "flickerReport"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaSutra"
+        username: "cinemaSutra"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theMovieOracle"
+        username: "theMovieOracle"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "scriptScholar"
+        username: "scriptScholar"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "plotPointer"
+        username: "plotPointer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "take27Reviews"
+        username: "take27Reviews"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "curtainCallCommentary"
+        username: "curtainCallCommentary"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "thePremierePerspective"
+        username: "thePremierePerspective"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMystic"
+        username: "movieMystic"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "reelReflections"
+        username: "reelReflections"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaWhispers"
+        username: "cinemaWhispers"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "frameByFrameFocus"
+        username: "frameByFrameFocus"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "boxOfficeBrainiac"
+        username: "boxOfficeBrainiac"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "silverScreenSpectacle"
+        username: "silverScreenSpectacle"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "flickerForecast"
+        username: "flickerForecast"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "indieInsights22"
+        username: "indieInsights22"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "sceneSpectator"
+        username: "sceneSpectator"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMagicReviewer"
+        username: "movieMagicReviewer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "storySleuth42"
+        username: "storySleuth42"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "closingCreditsCrew"
+        username: "closingCreditsCrew"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaConnoisseurship"
+        username: "cinemaConnoisseurship"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "reelRundown"
+        username: "reelRundown"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "flickFix"
+        username: "flickFix"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaScopeReviews"
+        username: "cinemaScopeReviews"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theMovieMind"
+        username: "theMovieMind"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "scriptSleuth"
+        username: "scriptSleuth"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "plotPilot"
+        username: "plotPilot"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "takeTwoReviews"
+        username: "takeTwoReviews"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "curtainCallCritic"
+        username: "curtainCallCritic"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "starStruckViewer"
+        username: "starStruckViewer"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "flashbackFilm"
+        username: "flashbackFilm"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "thePremierePro"
+        username: "thePremierePro"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMuse"
+        username: "movieMuse"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "reelReactions"
+        username: "reelReactions"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "frameFocus"
+        username: "frameFocus"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieBuff83"
+        username: "movieBuff83"
+      }
+      {
+        displayName: "Tyler Crowe"
+        imageUrl: "https://lh3.googleusercontent.com/a/ACg8ocLAIkcm6hYGKyfFwb5KkpixMXytR9B_qjqAbEWRcI1G1p7Z4P42=s96-c"
+        uid: "kbBcw9kkoWVOm18cqKGo8rcV0ky2"
+        username: "tscrowe"
+      }
+      {
+        displayName: "ax"
+        imageUrl: "https://lh3.googleusercontent.com/a/ACg8ocItw1Unh0OiWT_tFIHfIB_-cO8AWur_8TydnkEjrvN_ZIjrjk07Eg=s96-c"
+        uid: "MzrEnNV500bPGsywbayRodyFDqp1"
+        username: "regnou.a"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "digitalFilmDigest"
+        username: "digitalFilmDigest"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "reviewRepository"
+        username: "reviewRepository"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "pictureShowPro"
+        username: "pictureShowPro"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "screenGazerGazette"
+        username: "screenGazerGazette"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "movieMinutes"
+        username: "movieMinutes"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "theFilmFrontier"
+        username: "theFilmFrontier"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "pixelatedPictures"
+        username: "pixelatedPictures"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "flickerFactsFinder"
+        username: "flickerFactsFinder"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "cinemaSavvyScout"
+        username: "cinemaSavvyScout"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "scriptSecrets"
+        username: "scriptSecrets"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "plotPrognosis"
+        username: "plotPrognosis"
+      }
+      {
+        displayName: null
+        imageUrl: null
+        uid: "takeActionReviews"
+        username: "takeActionReviews"
+      }
+    ]
+  )
+  review_insertMany(
+    data: [
+      {
+        id: "f9f81ab083af5b8f8c23fb3140d4ea17"
+        movieId: "the-game"
+        rating: 3
+        review: "Unfortunately, 'The Game' didn't quite live up to its potential. The concept is interesting, but the execution is lacking. The killer, played by Jayden Monroe, is menacing enough, but the script doesn't give him much to work with. The movie felt really slow."
+        reviewTime: "2025-02-05T09:25:42.435000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "c5754ac17139507ca7777e773cdd5352"
+        movieId: "the-game"
+        rating: 6
+        review: "I enjoyed 'The Game' for what it was: a simple, suspenseful thriller. It's not going to win any awards, but it kept me entertained for a couple of hours. Charlotte Lawson was believable as a former military man."
+        reviewTime: "2025-03-09T04:19:00.009000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "dbe08b9aa7475cc893a8613bb77daae5"
+        movieId: "the-game"
+        rating: 3
+        review: "Very predictable and lacks any real scares. The characters are underdeveloped, and the killer's motives are never fully explained. Definitely not worth the time or money. Even Jayden Monroe's performance was uninspired."
+        reviewTime: "2025-03-19T18:04:53.298000Z"
+        userUid: "boxOfficeBuzz"
+      }
+      {
+        id: "93b88a0184ab5d0498cbbdf555ad9975"
+        movieId: "the-game"
+        rating: 7
+        review: "Despite its flaws, 'The Game' is a fun ride. The mansion is creepy, and the characters are interesting enough to root for. It's not the most original thriller out there, but it's definitely worth a watch if you're a fan of the genre."
+        reviewTime: "2025-02-18T20:10:12.103000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "9f221da3d9085c6cb7ca52c20d118c5e"
+        movieId: "the-game"
+        rating: 5
+        review: "An adequately thrilling movie that is neither great nor terrible. Madeline Coolidge, Charlotte Lawson, and Zoe Byron were well-cast, but the killer's portrayal felt somewhat cartoonish at times. Overall, a passable thriller."
+        reviewTime: "2025-02-03T12:22:02.610000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "933e660b5e615481ad3beeaba80added"
+        movieId: "vanishing-point"
+        rating: 5
+        review: "I was disappointed. The premise was interesting, but the execution fell flat. The characters were underdeveloped, and the plot dragged in places. Not the best thriller I've seen."
+        reviewTime: "2025-02-23T16:32:57.171000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "b6ad2922b5935a77ae7bc851ecd14bd7"
+        movieId: "vanishing-point"
+        rating: 7
+        review: "This film boasts a strong performance from Adrian Byron, who really sells the determined journalist role. The suspense is well-maintained throughout, though the final act doesn't quite live up to the tension built earlier. Worth a watch for thriller fans."
+        reviewTime: "2025-01-21T18:29:22.197000Z"
+        userUid: "screenSage"
+      }
+      {
+        id: "75b19c4c42e15816832f563d9d828fa1"
+        movieId: "vanishing-point"
+        rating: 8
+        review: "A truly chilling thriller! The small-town atmosphere is perfectly crafted, and the mystery of the disappearances is genuinely captivating. Asher Newman as Sheriff Thompson was a stand out! The human experimentation aspect adds a disturbing layer to the story."
+        reviewTime: "2025-03-03T21:20:42.632000Z"
+        userUid: "projectorPro"
+      }
+      {
+        id: "62e7a058a1655234932dc8bffa030668"
+        movieId: "vanishing-point"
+        rating: 6
+        review: "Not bad, but not great. The plot was a bit too convoluted for my taste, and some of the characters felt underdeveloped. Bella Polk as the Mayor didn't sell it for me. Byron was solid, though."
+        reviewTime: "2025-02-14T12:46:36.050000Z"
+        userUid: "filmFinder007"
+      }
+      {
+        id: "16be4332fd40509f98e27a3c1730e295"
+        movieId: "vanishing-point"
+        rating: 7
+        review: "Vanishing Point is a well-made thriller with a timely message. The performances are solid across the board, but Adrian Byron truly shines as the determined journalist. The conspiracy is intriguing, even if the ending is a bit predictable."
+        reviewTime: "2025-02-03T07:22:47.002000Z"
+        userUid: "criticCorner"
+      }
+      {
+        id: "bb78a1fcdcd05800894472de50ac3189"
+        movieId: "silent-vector"
+        rating: 6
+        review: "Silent Vector is a serviceable action movie. It's not going to win any awards, but it provides some thrills and decent performances from the leads, especially Aidan Harris who seems to have really embraced the grizzled action hero role."
+        reviewTime: "2025-01-28T19:00:31.911000Z"
+        userUid: "theViewingVault"
+      }
+      {
+        id: "efce230d50ce5f02a0a6457407bf1254"
+        movieId: "silent-vector"
+        rating: 8
+        review: "I was pleasantly surprised by Silent Vector! The action sequences were inventive, the plot kept me guessing, and the performances were fantastic. Amelia Roosevelt proves she's more than just a pretty face, holding her own against the veteran Aidan Harris. Highly recommended."
+        reviewTime: "2025-01-05T18:07:27.254000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "fa737ee7c2195164afe0dde1d19593d2"
+        movieId: "silent-vector"
+        rating: 5
+        review: "Unfortunately, Silent Vector falls into the trap of many action movies - style over substance. There's plenty of explosions and fight scenes, but the story is weak and the characters are forgettable. Wesley Stanley as Director Thompson was particularly wooden."
+        reviewTime: "2025-03-05T20:56:39.166000Z"
+        userUid: "boxOfficeBuzz"
+      }
+      {
+        id: "dea57a0be60f5f37b3cba3f5982b24e5"
+        movieId: "silent-vector"
+        rating: 6
+        review: "Silent Vector is your typical action flick: lots of running, shooting, and a generic bad guy trying to destroy the world. Aidan Harris and Amelia Roosevelt have good chemistry, but the film offers nothing new."
+        reviewTime: "2025-03-01T02:48:21.100000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "5ac30185ae6557138ab8027f95329406"
+        movieId: "silent-vector"
+        rating: 7
+        review: "Solid action movie with a decent story. Aidan Harris is believable as the hardened ex-soldier, and Amelia Roosevelt is surprisingly good as the rookie agent. The fight choreography is excellent, and the locations are visually appealing. Overall, a good popcorn movie."
+        reviewTime: "2024-12-12T04:06:59.233000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "1f554ec1bd295afd9b8f0794d8c434dd"
+        movieId: "fortress-breach"
+        rating: 6
+        review: "Fortress Breach delivers exactly what you'd expect: explosions, gunfire, and a whole lot of running. Samuel Fitzgerald is solid as the leader, but the plot is pretty thin. Good for a mindless action fix."
+        reviewTime: "2025-01-11T10:13:23.067000Z"
+        userUid: "cinemaScout"
+      }
+      {
+        id: "80ecbbcd8357528b9487ff5a26d97f52"
+        movieId: "fortress-breach"
+        rating: 4
+        review: "Predictable plot and over-the-top action sequences. While Dylan Jefferson's performance was noteworthy, the movie suffers from a lack of originality. Not terrible, but not memorable either."
+        reviewTime: "2025-02-11T20:50:28.028000Z"
+        userUid: "flickFanatic88"
+      }
+      {
+        id: "5845a3f5297a5961a7b109996ec90b52"
+        movieId: "fortress-breach"
+        rating: 5
+        review: "This movie is a barrage of bullets and bravado, but the story struggles to keep up. It's a decent watch if you turn your brain off, but don't expect any surprises."
+        reviewTime: "2024-12-22T08:56:56.339000Z"
+        userUid: "reelReviews"
+      }
+      {
+        id: "11bcdaf429a354db96445677b6c7055c"
+        movieId: "fortress-breach"
+        rating: 7
+        review: "I enjoyed Fortress Breach more than I thought I would. Samuel Fitzgerald brings a stoic intensity to his role, and the action is well-choreographed. It's not reinventing the genre, but it's a fun ride."
+        reviewTime: "2025-03-12T06:54:44.692000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "71855a3ca05f5e7c91690946fbede380"
+        movieId: "fortress-breach"
+        rating: 3
+        review: "Loud, chaotic, and ultimately forgettable. The plot is wafer-thin, and the characters are underdeveloped. Even the explosions couldn't save this one."
+        reviewTime: "2025-01-15T23:53:09.381000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "31ba1e443a8f5cdab4d29fdf12c99740"
+        movieId: "fortress-breach"
+        rating: 5
+        review: "Fortress Breach is your typical action flick, full of explosions and heroic feats. It's entertaining enough, but don't expect any profound insights or complex characters."
+        reviewTime: "2025-01-30T21:05:12.705000Z"
+        userUid: "screenSage"
+      }
+      {
+        id: "5f65f659229c59fa97b38b0bdf1349d1"
+        movieId: "fortress-breach"
+        rating: 6
+        review: "A solid action movie with impressive stunts and a decent storyline. Owen Roberts added some depth to the film, but it could have been better if they focused more on character development instead of endless action. Still a fun watch."
+        reviewTime: "2025-02-26T22:54:44.502000Z"
+        userUid: "projectorPro"
+      }
+      {
+        id: "4d0359abde53594daef65890f9e45408"
+        movieId: "fortress-breach"
+        rating: 4
+        review: "Formulaic and uninspired. 'Fortress Breach' relies heavily on action clichés and lacks any real substance. Audrey Sharon's villain was cartoonish, and the plot was predictable from start to finish."
+        reviewTime: "2025-02-19T00:11:09.440000Z"
+        userUid: "filmFinder007"
+      }
+      {
+        id: "1b25f13539ce5fb2848772d639c9d0a1"
+        movieId: "vanishing-point"
+        rating: 9
+        review: "Absolutely brilliant! This film had me hooked from the very beginning. The suspense is masterfully built, and the performances are outstanding. The themes explored are thought-provoking and relevant. A must-see for any thriller fan. I was on the edge of my seat the whole time!"
+        reviewTime: "2024-12-04T23:29:20.616000Z"
+        userUid: "silverScreenSage"
+      }
+      {
+        id: "0c2f4cdc3d805cedaba68f3ecac86e02"
+        movieId: "burial-ground"
+        rating: 4
+        review: "I went into Burial Ground with low expectations, and I was pleasantly surprised. It's a fairly standard haunted house story, but it's well-crafted and has some genuinely chilling scenes. The special effects are decent for an 80s horror film, and the pacing is good. The plot is a bit predictable though."
+        reviewTime: "2025-02-15T12:41:47.365000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "ea6d34e9407b5429a06a944bbd457869"
+        movieId: "burial-ground"
+        rating: 3
+        review: "Burial Ground is a formulaic haunted house flick that fails to deliver on its promise of scares. The script relies heavily on clichés. The acting isn't terrible, but it's not particularly memorable either. Overall, a disappointing experience."
+        reviewTime: "2025-02-28T23:15:43.492000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "559101de354e5bc69ad870545491ce09"
+        movieId: "burial-ground"
+        rating: 4
+        review: "Burial Ground is a serviceable haunted house movie. It has some decent scares and a creepy atmosphere, but it doesn't really bring anything new to the table. The acting is okay, but no one really stands out. If you're a fan of the genre, it's worth a watch, but don't expect to be blown away."
+        reviewTime: "2025-01-12T05:59:51.824000Z"
+        userUid: "filmFinder007"
+      }
+      {
+        id: "d57fafedf5da5f1fbe6fb4a4363b3891"
+        movieId: "burial-ground"
+        rating: 3
+        review: "Predictable and uninspired. Burial Ground treads familiar territory without adding anything new or exciting. The jump scares are cheap, and the story is paper-thin. Ethan Clark does his best with what he's given, but it's not enough to save this movie."
+        reviewTime: "2025-01-14T22:42:28.704000Z"
+        userUid: "criticCorner"
+      }
+      {
+        id: "63e1761462bb527581652e75d7a69c73"
+        movieId: "burial-ground"
+        rating: 6
+        review: "I loved the atmosphere of Burial Ground. It really captured the feeling of 80s horror. While the plot is fairly standard, the execution is well done. The sound design is particularly effective in creating suspense. I especially loved Robert McAllister's character."
+        reviewTime: "2025-01-13T05:07:42.744000Z"
+        userUid: "silverScreenSage"
+      }
+      {
+        id: "ac35ef2e10ba51c39070a96bc24810bc"
+        movieId: "burial-ground"
+        rating: 4
+        review: "A decent but ultimately forgettable haunted house flick. Burial Ground has some creepy moments and a good atmosphere, but it's let down by a predictable plot and uninspired scares. The performances are adequate, but nothing special. Watchable, but not memorable."
+        reviewTime: "2024-12-29T14:45:16.816000Z"
+        userUid: "theViewingVault"
+      }
+      {
+        id: "6cb7332d6c9b558ead1c75c6729a950a"
+        movieId: "burial-ground"
+        rating: 5
+        review: "Burial Ground is a fun and spooky ride. It's not the most original movie, but it's well-made and entertaining. The special effects are good, and the acting is solid. If you're looking for a classic haunted house experience, this is a good choice."
+        reviewTime: "2025-03-06T21:35:59.414000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "e97d4d3d8b6953d2a8b65fad6e368e10"
+        movieId: "burial-ground"
+        rating: 3
+        review: "Despite a promising premise, 'Burial Ground' quickly devolves into a series of predictable jump scares and tired horror tropes. Madelyn Earl's portrayal of Susan is earnest, but the script gives her little to work with. Ultimately, a disappointment."
+        reviewTime: "2025-01-19T15:29:41.106000Z"
+        userUid: "boxOfficeBuzz"
+      }
+      {
+        id: "91fd7ed1774a5a17a7f080d9134c44ac"
+        movieId: "burial-ground"
+        rating: 6
+        review: "I thought the casting for Burial Ground was perfect. Ethan Clark, Madelyn Earl, and Lucas Dean all did a fantastic job. I also liked how Dr. Evans was portrayed. I highly recommend this film."
+        reviewTime: "2025-02-08T19:57:50.020000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "2f783a7fdf86559e99ec2c4095dbdf07"
+        movieId: "burial-ground"
+        rating: 5
+        review: "A quintessential haunted house story done right. 'Burial Ground' utilizes classic horror elements to create a suspenseful and engaging experience. The scares are effective, and the performances are convincing. The cinematography is really well done. A must-see for fans of the genre."
+        reviewTime: "2025-03-20T01:40:32.610000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "3199203e3c7f5fceaaec4782b4cf41f0"
+        movieId: "digital-uprising"
+        rating: 8
+        review: "Digital Uprising is a visually stunning cyberpunk thriller that kept me on the edge of my seat. Violet Olive shines as Kira, a hacker fighting for freedom against a corrupt government. While the plot has some familiar tropes, the action sequences and world-building are top-notch."
+        reviewTime: "2025-02-16T13:30:04.126000Z"
+        userUid: "cinemaScout"
+      }
+      {
+        id: "b8e58fc920785f0b8fa043db708fa0cb"
+        movieId: "digital-uprising"
+        rating: 9
+        review: "A fantastic movie! I was hooked from the start. The visual style is incredible and the story is very engaging. Violet Olive delivers a powerful performance as Kira. Highly recommended!"
+        reviewTime: "2025-03-13T01:18:53.987000Z"
+        userUid: "flickFanatic88"
+      }
+      {
+        id: "1b2cfbd73cd455da93c4ef0a53b3ac82"
+        movieId: "digital-uprising"
+        rating: 7
+        review: "Digital Uprising has a lot of potential, but it doesn't quite live up to the hype. The action is solid and the cyberpunk aesthetic is well-executed. However, the plot feels rushed and some of the characters are underdeveloped. Ethan Sullivan does a solid job as Commander Rhys, but his character needed more depth."
+        reviewTime: "2025-02-23T16:15:33.748000Z"
+        userUid: "reelReviews"
+      }
+      {
+        id: "a2a2bb469c9851d9ab90bc3e27535ca3"
+        movieId: "digital-uprising"
+        rating: 8
+        review: "The visuals in Digital Uprising are simply breathtaking. The story is a bit predictable, but the themes of government control and rebellion are very relevant today. The performances are good across the board, especially Sebastian Gray as Director Thorne, who makes for a suitably menacing villain."
+        reviewTime: "2024-11-29T07:21:33.160000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "9f685f08143056c084e1db7850468d4e"
+        movieId: "digital-uprising"
+        rating: 6
+        review: "While Digital Uprising looks great, it suffers from a weak script and uninspired characters. The action scenes are exciting, but they can't make up for the lack of substance. Genesis Arthur is wasted as Agent Volkov."
+        reviewTime: "2025-01-22T17:28:48.731000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "c09e82c0dc405df29af8de3e9bf9c574"
+        movieId: "digital-uprising"
+        rating: 6
+        review: "Digital Uprising is a visually appealing film, but the plot feels underdeveloped. The actors do their best with the material, but the script is lacking. I wanted to like it more, but it just didn't quite click for me."
+        reviewTime: "2025-03-16T17:38:44.212000Z"
+        userUid: "theViewingVault"
+      }
+      {
+        id: "9e92fb3bf7035624a146fa42949bd6ff"
+        movieId: "digital-uprising"
+        rating: 8
+        review: "An exciting cyberpunk adventure that delivers on its promises. The visuals are stylish and the action is non-stop. Violet Olive is great as the lead, and Sebastian Gray makes for a compelling villain. Some of the plot points felt rushed, but overall a solid movie."
+        reviewTime: "2025-02-21T04:25:09.684000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "def82741b0bb5649ba7678eab20e2ff5"
+        movieId: "digital-uprising"
+        rating: 7
+        review: "Digital Uprising is a decent watch, but nothing groundbreaking. The action is fun, and the world-building is interesting, but the plot is predictable and the characters are a bit shallow. It's a good popcorn flick, but don't expect anything too deep."
+        reviewTime: "2025-02-17T17:55:41.186000Z"
+        userUid: "boxOfficeBuzz"
+      }
+      {
+        id: "9789ec28b87755aa8f285a5b282c25a7"
+        movieId: "digital-uprising"
+        rating: 10
+        review: "One of the best movies I've seen this year! Digital Uprising is a visually stunning and intellectually stimulating cyberpunk thriller. The performances are excellent, the action is thrilling, and the story is both timely and timeless. A true masterpiece!"
+        reviewTime: "2024-12-01T11:03:22.206000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "07b81156c1845fc8bc0a81fef228150d"
+        movieId: "digital-uprising"
+        rating: 7
+        review: "Digital Uprising is a solid cyberpunk action film with some interesting ideas and impressive visuals. However, the plot is a bit convoluted and the characters are not as well-developed as they could be. Overall, a decent watch, but not a must-see."
+        reviewTime: "2025-03-25T15:50:32.798000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "bd1a4ce2f53459bbae86c11132cb1522"
+        movieId: "sunset-justice"
+        rating: 7
+        review: "Sunset Justice delivers exactly what you'd expect from an 80s buddy cop flick: cheesy one-liners, over-the-top action, and a whole lot of explosions. Adrian Florence and Charlotte Arnold have decent chemistry, even if the plot is predictable. Still, a fun watch if you're in the mood for some retro action."
+        reviewTime: "2025-01-17T19:15:19.286000Z"
+        userUid: "cinemaScout"
+      }
+      {
+        id: "707a73dab351506398a64245293a0a69"
+        movieId: "ember-dawn"
+        rating: 9
+        review: "This movie is a masterpiece! Ember Dawn is a thrilling and thought-provoking film that will stay with you long after the credits roll. The acting is superb, the visuals are stunning, and the story is incredibly powerful."
+        reviewTime: "2024-12-13T20:32:18.848000Z"
+        userUid: "criticCorner"
+      }
+      {
+        id: "2e315670a8d75480a0fa396cb8f29bb4"
+        movieId: "camp-blood"
+        rating: 4
+        review: "Look, is it Citizen Kane? No. But Camp Blood delivers exactly what you want from an 80s slasher: cheesy kills, over-the-top acting, and a killer with a silly motive. Turn off your brain and enjoy the ride!"
+        reviewTime: "2024-12-28T17:26:03.188000Z"
+        userUid: "cinemaCentral"
+      }
+      {
+        id: "e58f6ee7651e523e9c85add8b9f1bca1"
+        movieId: "camp-blood"
+        rating: 2
+        review: "Camp Blood tries to be scary, but it mostly ends up being boring. The pacing is slow, and the characters are uninteresting. The killer's reveal is underwhelming, and the ending is predictable. Overall, a forgettable slasher that fails to leave a lasting impression."
+        reviewTime: "2025-01-13T21:29:19.671000Z"
+        userUid: "digitalDivaFilm"
+      }
+      {
+        id: "71fb7bc8e7585c70951b5ebdda4e86e0"
+        movieId: "camp-blood"
+        rating: 3
+        review: "Camp Blood is a decent but unremarkable slasher film. The summer camp setting is familiar, but the film manages to create a few suspenseful moments. The acting is adequate, and the killer's identity is revealed in a somewhat surprising way. Overall, a decent way to spend an evening if you're a fan of the genre."
+        reviewTime: "2025-03-09T06:59:38.760000Z"
+        userUid: "reelTalk"
+      }
+      {
+        id: "ceb54e5f860e57519133d66d9d3b7736"
+        movieId: "camp-blood"
+        rating: 2
+        review: "I wish I could say Camp Blood was a hidden gem, but it's just another generic slasher. The acting is wooden, the plot is predictable, and the scares are nonexistent. Even the special effects are subpar. Save your money and watch something else."
+        reviewTime: "2025-03-03T21:52:32.493000Z"
+        userUid: "silverScreenSage"
+      }
+      {
+        id: "32db87217f7c50b2b0636e14423de2e6"
+        movieId: "camp-blood"
+        rating: 4
+        review: "Camp Blood is a total blast from the past! It's got all the classic slasher elements: a spooky setting, a masked killer, and a group of clueless teenagers. Sure, the plot is predictable, and the acting is a little cheesy, but that's part of the fun! If you're looking for a nostalgic trip back to the 80s, this is the movie for you."
+        reviewTime: "2025-02-06T10:01:49.430000Z"
+        userUid: "cinematicJunkie"
+      }
+      {
+        id: "0c41410ee32e5e17a43ebbdbde602206"
+        movieId: "shattered-memories"
+        rating: 7
+        review: "Shattered Memories is a decent thriller that kept me guessing for the most part. Ella Dixon delivers a solid performance as Sarah, portraying the confusion and fear of amnesia convincingly. The plot had some interesting twists, although I agree with others that some of them felt a bit too convoluted."
+        reviewTime: "2025-03-11T00:24:56.978000Z"
+        userUid: "cinemaScout"
+      }
+      {
+        id: "3941dd4cfb5254d38980e1a25a0cfb74"
+        movieId: "shattered-memories"
+        rating: 8
+        review: "I really enjoyed Shattered Memories! The amnesia plot is a classic, but this movie puts a fresh spin on it. The fragmented memories were visualized really well. Angel Ford as Detective Miller was also a great casting choice, providing a grounded presence amidst all the mystery. Definitely worth a watch!"
+        reviewTime: "2025-01-12T20:50:59.545000Z"
+        userUid: "flickFanatic88"
+      }
+      {
+        id: "2f88dd7d6f4156eb962886dc30d35d1f"
+        movieId: "shattered-memories"
+        rating: 6
+        review: "Shattered Memories had potential, but ultimately fell a bit short. The premise is intriguing, and Ella Dixon does a good job, but the story gets bogged down in unnecessary complexities. I found myself losing interest about halfway through. Hunter Johnson's character, Mark, felt underdeveloped and didn't add much to the plot."
+        reviewTime: "2025-02-25T05:08:12.343000Z"
+        userUid: "reelReviews"
+      }
+      {
+        id: "a39696db5446540cb34631927838e6c2"
+        movieId: "shattered-memories"
+        rating: 9
+        review: "A gripping thriller from start to finish! Shattered Memories masterfully weaves a web of suspense, with each revelation more shocking than the last. The performances are top-notch, especially Ella Dixon who carries the emotional weight of the film beautifully. Yes, some twists are a bit out there, but they add to the fun! Highly recommended."
+        reviewTime: "2025-03-15T17:30:47.316000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "151e8272c848511e9296b15b046d8e65"
+        movieId: "chamber-of-the-ancients"
+        rating: 2
+        review: "I can't say I enjoyed Chamber of the Ancients. The story was a confusing mess and the acting left a lot to be desired. It's not the worst movie ever made, but I certainly wouldn't recommend it."
+        reviewTime: "2025-02-05T22:11:33.223000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "888cbdb915295c5caa5f9781510babab"
+        movieId: "sunset-justice"
+        rating: 7
+        review: "A fun, if somewhat predictable, action flick. Adrian Florence plays the straight-laced cop well, and Charlotte Arnold brings the right amount of grit to her bounty hunter character. The action sequences are entertaining, and the Miami setting is a nice backdrop. Sunset Justice is a decent way to spend an evening."
+        reviewTime: "2025-01-04T02:40:08.892000Z"
+        userUid: "screenSage"
+      }
+      {
+        id: "7e5727bcd3ef5b16b80df7e9aea4f251"
+        movieId: "sunset-justice"
+        rating: 8
+        review: "Sunset Justice really took me back to my childhood. It's got everything you'd want in a buddy cop movie: car chases, shootouts, and plenty of witty banter. Adrian Florence and Charlotte Arnold have great chemistry, and Wyatt Harrison is suitably menacing as the drug lord. Highly recommended!"
+        reviewTime: "2024-12-16T08:37:26.803000Z"
+        userUid: "projectorPro"
+      }
+      {
+        id: "f9059f1649385e32b1d7e4fe620964eb"
+        movieId: "sunset-justice"
+        rating: 6
+        review: "The plot is nothing new, but Sunset Justice delivers on its promise of action and explosions. Charlotte Arnold steals every scene she's in, and Adrian Florence is a solid counterpart. It's a decent popcorn flick that's worth a watch if you're not looking for anything too deep."
+        reviewTime: "2025-03-17T16:31:07.890000Z"
+        userUid: "filmFinder007"
+      }
+      {
+        id: "ecdec1b3549a535e93e1364a692c606c"
+        movieId: "sunset-justice"
+        rating: 7
+        review: "Sunset Justice is a solid entry in the buddy cop genre. The action is well-done, and the chemistry between Adrian Florence and Charlotte Arnold is believable. While the story is predictable, the performances and action make it worth watching. Captain Emily Carter, played by Amelia Sullivan, was also well cast and served her part well."
+        reviewTime: "2025-03-23T20:25:36.753000Z"
+        userUid: "criticCorner"
+      }
+      {
+        id: "275a0ee0f3725f948ebec4d5c116276d"
+        movieId: "wasteland-exodus"
+        rating: 8
+        review: "'Wasteland Exodus' delivers on its promise of post-apocalyptic action. Max Harvey is great as the brooding warrior Kael, and the fight scenes are brutal. While the story treads familiar ground, it's a fun ride."
+        reviewTime: "2025-01-28T16:33:19.478000Z"
+        userUid: "cinemaScout"
+      }
+      {
+        id: "86634b1372115ff08474c42f95e301db"
+        movieId: "wasteland-exodus"
+        rating: 3
+        review: "I found 'Wasteland Exodus' to be derivative and boring. The special effects are laughably bad, and the plot is something we've seen a million times before. Madelyn Carol's performance as Sarah didn't help much, either. Skip this one."
+        reviewTime: "2025-03-14T06:19:44.333000Z"
+        userUid: "flickFanatic88"
+      }
+      {
+        id: "7c0d432ed87153ffb87f526ddd7b5f83"
+        movieId: "wasteland-exodus"
+        rating: 9
+        review: "This movie is a hidden gem! 'Wasteland Exodus' offers a compelling vision of a world ravaged by disaster. Max Harvey brings a depth to his character that elevates the film beyond simple action. The world-building is superb, crafting a dangerous and desperate setting."
+        reviewTime: "2024-12-09T10:41:41.923000Z"
+        userUid: "reelReviews"
+      }
+      {
+        id: "6d931c4206265cec89761a03a1d5b852"
+        movieId: "wasteland-exodus"
+        rating: 5
+        review: "It's okay. 'Wasteland Exodus' has some interesting ideas, but they don't quite come together. The plot is predictable, and the special effects are dated, even for an 80s movie. Allison Johnson hams it up as Ravage, though."
+        reviewTime: "2024-12-21T15:00:59.422000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "e8168e6b988656998d70e64e2d337727"
+        movieId: "wasteland-exodus"
+        rating: 4
+        review: "I had high hopes for 'Wasteland Exodus,' but it fell short. The premise is intriguing, but the execution is lacking. The action sequences are decent, but the story feels unoriginal. It's a passable way to kill a couple of hours, but nothing more."
+        reviewTime: "2025-01-02T23:14:51.891000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "95ab54fb9e0150348d1e0d07b81d64f4"
+        movieId: "wasteland-exodus"
+        rating: 7
+        review: "'Wasteland Exodus' is a solid action film with a post-apocalyptic twist. The performances are engaging, and the wasteland setting is well-realized. While the plot isn't groundbreaking, it's entertaining enough to keep you invested. I especially enjoyed Ella Brooks as Elder Maya."
+        reviewTime: "2025-02-14T23:21:46.198000Z"
+        userUid: "screenSage"
+      }
+      {
+        id: "0b778744c8e252048b45f7501b80f692"
+        movieId: "wasteland-exodus"
+        rating: 2
+        review: "What a waste of time! 'Wasteland Exodus' is a cheap imitation of better post-apocalyptic movies. The special effects are atrocious, the acting is wooden, and the story is a rehash of every other wasteland narrative. Avoid at all costs."
+        reviewTime: "2025-01-29T03:25:39.735000Z"
+        userUid: "projectorPro"
+      }
+      {
+        id: "b91f3dbec4cb560d8c1b89b9a6452373"
+        movieId: "shattered-memories"
+        rating: 5
+        review: "I wanted to like Shattered Memories, but it just didn't click for me. The plot was confusing, and the characters were not particularly engaging. The ending felt rushed and unsatisfying. While Ella Dixon tried her best, the script didn't give her much to work with."
+        reviewTime: "2025-03-19T07:43:53.149000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "83977a445daf5039a57b2ceb564971d8"
+        movieId: "the-watcher"
+        rating: 7
+        review: "This movie was pretty good. The premise was a little bit cliche, but Adam Sterling as the neighbor made the movie memorable. The lead characters do a good job too, but the writing was a little weak, so I think it held them back."
+        reviewTime: "2025-02-08T19:10:59.134000Z"
+        userUid: "theViewingVault"
+      }
+      {
+        id: "d922fdbc47125361a4c245ac9755af82"
+        movieId: "the-watcher"
+        rating: 8
+        review: "If you like thrillers, you should check this movie out. It definitely will make you wonder who is watching you. My wife and I both enjoyed the movie, and we stayed up talking about it for an hour afterwards. I can't ask for much more from a film!"
+        reviewTime: "2024-12-10T07:11:32.115000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "0cf7d00b9a0453108214a1238ad7c16a"
+        movieId: "the-watcher"
+        rating: 7
+        review: "The Watcher does a good job of building tension, but it doesn't always deliver the payoff you'd expect. The acting is solid, especially Hazel Freya, and the story is engaging enough to keep you interested. However, the ending felt a bit rushed."
+        reviewTime: "2025-03-15T14:39:28.092000Z"
+        userUid: "boxOfficeBuzz"
+      }
+      {
+        id: "7397d703ed7a537eb78b90bdd8e13da0"
+        movieId: "the-watcher"
+        rating: 6
+        review: "I went into this movie expecting a suspenseful thriller, but I came out feeling a little underwhelmed. The premise is interesting, but the execution is lacking. Emilia Johnson's performance was decent, but overall, the movie didn't quite click for me."
+        reviewTime: "2024-12-14T01:47:05.453000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "0045ee77ae7752f1b79654d962d59fcf"
+        movieId: "the-watcher"
+        rating: 9
+        review: "The Watcher is a fantastic thriller that keeps you on the edge of your seat from beginning to end. The performances are top-notch, with Hazel Freya leading the way. The movie's exploration of privacy invasion and voyeurism is both chilling and relevant. Highly recommended!"
+        reviewTime: "2024-12-10T13:56:24.345000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "93f91d08279c5b2a9d3b71fa74664b28"
+        movieId: "the-ritual"
+        rating: 7
+        review: "I was really drawn in by the premise of 'The Ritual'. Angel Ford delivers a solid performance as the determined Sarah, and the mystery surrounding her sister's disappearance kept me guessing. The atmosphere is undeniably creepy, but the film could have benefited from a few more genuine scares. Overall, a worthwhile watch if you're a fan of thrillers."
+        reviewTime: "2025-01-21T16:29:20.723000Z"
+        userUid: "cinemaScout"
+      }
+      {
+        id: "6316410d238152a595a95eaf84675289"
+        movieId: "the-ritual"
+        rating: 6
+        review: "'The Ritual' had potential, but it felt like it was dragging its feet. The small town setting and hints of a sinister cult were intriguing. Kennedy Hamilton acted wonderfully as Emily! However, the pacing really let it down and the scary scenes just weren't that scary. Not bad, but not great."
+        reviewTime: "2025-03-17T04:17:49.871000Z"
+        userUid: "flickFanatic88"
+      }
+      {
+        id: "73b00b850ea05491a007a7e8d8c240dd"
+        movieId: "the-ritual"
+        rating: 8
+        review: "I went into this movie expecting a typical thriller, but I was pleasantly surprised. 'The Ritual' builds suspense effectively, and the performances are all top-notch, especially Angel Ford's. The ritualistic elements are genuinely disturbing, and the dark secrets of the town kept me on the edge of my seat. Highly recommended!"
+        reviewTime: "2025-02-19T01:31:42.585000Z"
+        userUid: "reelReviews"
+      }
+      {
+        id: "4516c4ade3b056a7853746ac7eb8a9b7"
+        movieId: "wasteland-exodus"
+        rating: 5
+        review: "'Wasteland Exodus' is a mixed bag. The action is decent, and the post-apocalyptic setting is well-realized, but the plot is predictable, and the special effects are dated. It's an okay watch if you're a fan of the genre, but don't expect anything groundbreaking."
+        reviewTime: "2025-01-01T01:07:49.319000Z"
+        userUid: "theViewingVault"
+      }
+      {
+        id: "34765c6402c156638a1949dd93281cca"
+        movieId: "wasteland-exodus"
+        rating: 8
+        review: "This movie is a blast from the past! 'Wasteland Exodus' captures the spirit of 80s action films with its gritty visuals and over-the-top characters. While the special effects may not hold up to modern standards, the sheer energy and enthusiasm of the film make it a worthwhile watch. Allison Johnson as Ravage is particularly memorable."
+        reviewTime: "2025-01-29T02:50:33.445000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "bf0f0ed8fcfa56f49f857f4e6149cc77"
+        movieId: "wasteland-exodus"
+        rating: 7
+        review: "I enjoyed 'Wasteland Exodus' more than I expected. It's a fun and action-packed adventure through a dangerous wasteland. The world-building is well done, and the characters are engaging. While the plot may be familiar, the execution is solid."
+        reviewTime: "2024-12-19T18:09:28.213000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "6b955180dfb25d21b4e2bbc893c08733"
+        movieId: "iron-will"
+        rating: 8
+        review: "Iron Will is a throwback to the golden age of martial arts movies. While the plot is somewhat predictable, the action sequences more than make up for it. Brandon Atkinson carries the film with his impressive skills and charisma."
+        reviewTime: "2025-01-10T19:08:57.689000Z"
+        userUid: "screenSage"
+      }
+      {
+        id: "5a64d6e4e8b35c5f85c6b7704e02945d"
+        movieId: "iron-will"
+        rating: 9
+        review: "From the opening scene to the final showdown, Iron Will is a non-stop thrill ride. The film's message about standing up for what's right is timeless and powerful. Master Chen's wisdom adds a beautiful layer to the film."
+        reviewTime: "2024-11-30T21:06:15.869000Z"
+        userUid: "projectorPro"
+      }
+      {
+        id: "7098532aa81b5559b499fe1d460e2c72"
+        movieId: "iron-will"
+        rating: 7
+        review: "It's a fun movie, but I felt like the plot was a bit thin. Still, the fight scenes are amazing, and Brandon Atkinson is great. Worth a watch if you're into martial arts films."
+        reviewTime: "2024-12-03T11:28:22.978000Z"
+        userUid: "filmFinder007"
+      }
+      {
+        id: "6e9e9a9f176d5f92ad89d46e7ada011a"
+        movieId: "iron-will"
+        rating: 10
+        review: "Iron Will is a triumph! A truly amazing movie from start to finish! The action is spectacular, the story is compelling, and the performances are stellar. A must see!"
+        reviewTime: "2025-03-14T10:35:58.602000Z"
+        userUid: "criticCorner"
+      }
+      {
+        id: "5ce0c523916e5e6d8b23b91827d3cfac"
+        movieId: "iron-will"
+        rating: 8
+        review: "An enjoyable martial arts film with a classic feel. The fight choreography is well done, and the actors all deliver solid performances. Jayden Chapman makes a truly menacing villain. Definitely worth checking out!"
+        reviewTime: "2025-03-09T10:33:08.404000Z"
+        userUid: "silverScreenSage"
+      }
+      {
+        id: "577e36b4f995582bbb87399b97b54172"
+        movieId: "iron-will"
+        rating: 9
+        review: "Iron Will is a brilliant martial arts movie with amazing fight scenes that will have you on the edge of your seat. The story about fighting for justice is captivating and Brandon Atkinson as Li Wei is just incredible. A must-watch!"
+        reviewTime: "2025-02-22T14:22:36.750000Z"
+        userUid: "theViewingVault"
+      }
+      {
+        id: "b9a9e6a8c628566d899ba6627a4c4340"
+        movieId: "iron-will"
+        rating: 6
+        review: "It's okay. The action is good, but the story is pretty basic. I wasn't super impressed, but it's not a bad movie either."
+        reviewTime: "2025-01-23T00:49:05.249000Z"
+        userUid: "lensLover"
+      }
+      {
+        id: "3c5a74981f655d83b852dc0b4458383b"
+        movieId: "iron-will"
+        rating: 10
+        review: "What an absolute gem of a film! Iron Will is everything you could want in a martial arts movie and more. The action is incredible, the characters are well-developed, and the story is both exciting and heartwarming. Li Wei's journey is so inspiring!"
+        reviewTime: "2025-01-25T11:19:30.612000Z"
+        userUid: "boxOfficeBuzz"
+      }
+      {
+        id: "9dca48da2cd458138b04b87559501dc8"
+        movieId: "iron-will"
+        rating: 7
+        review: "The movie's alright. I thought the plot was a bit predictable, and some of the dialogue was cheesy, but the fight scenes were undeniably cool. Worth a watch if you're a fan of the genre, but don't expect a cinematic masterpiece."
+        reviewTime: "2025-01-31T09:39:56.999000Z"
+        userUid: "hollywoodHype"
+      }
+      {
+        id: "439665f9509a507c94700cf135663ab8"
+        movieId: "iron-will"
+        rating: 8
+        review: "Iron Will is a solid martial arts flick with a strong message about standing up for your community. The action is well-choreographed, and the performances are engaging. While it might not break any new ground, it's a thoroughly enjoyable watch."
+        reviewTime: "2024-12-16T12:21:11.042000Z"
+        userUid: "indieInsider"
+      }
+      {
+        id: "e9fd820ee42453e2af72bb4c6673136b"
+        movieId: "the-ritual"
+        rating: 5
+        review: "Honestly, I was a bit bored. The plot was interesting enough, but the execution felt lacking. The scares were predictable, and the pacing was so slow that I almost fell asleep. William Lincoln did his best with Sheriff Brown, but the character felt underdeveloped. I wouldn't recommend it."
+        reviewTime: "2024-12-10T10:33:02.301000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "968b97062b5e55a889b58bec837d8077"
+        movieId: "the-ritual"
+        rating: 7
+        review: "A solid thriller with a compelling mystery at its core. Angel Ford shines as the lead, and the supporting cast is equally strong. While it could have been a bit scarier, the suspense and atmosphere are well-crafted. I was invested in Sarah's search for her sister and wanted to see how it all unfolded."
+        reviewTime: "2024-12-12T16:56:02.297000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "4987403943c051d18554216a318c7b62"
+        movieId: "virtual-nightmare"
+        rating: 7
+        review: "I enjoyed the concept of Virtual Nightmare! The idea of being trapped in a game is terrifying, and the movie does a good job of creating that sense of claustrophobia. Amelia Clinton delivers a solid performance as Lisa. The plot has some holes, but the action sequences kept me entertained."
+        reviewTime: "2025-02-10T04:02:00.469000Z"
+        userUid: "flickFanatic88"
+      }
+      {
+        id: "38697ceb3c295105bb9dc115e19bceec"
+        movieId: "virtual-nightmare"
+        rating: 4
+        review: "Visually stunning, but that's about it. 'Virtual Nightmare' relies too heavily on its special effects and forgets to develop compelling characters or a coherent plot. Alice Harrison's performance as Adam felt flat and uninspired. A disappointment."
+        reviewTime: "2025-03-19T06:50:12.377000Z"
+        userUid: "reelReviews"
+      }
+      {
+        id: "cac2e1dd42d35ceda68322a81b0fde45"
+        movieId: "virtual-nightmare"
+        rating: 5
+        review: "Virtual Nightmare is a mixed bag. The virtual reality world is visually impressive, but the story is lacking. It's a fun concept, but it could have been executed much better. The characters didn't feel very fleshed out, so it was hard to connect with them. I was hoping for more."
+        reviewTime: "2025-02-25T20:21:28.654000Z"
+        userUid: "movieMaven22"
+      }
+      {
+        id: "4554b869c05f511493c17f8a8293ef54"
+        movieId: "virtual-nightmare"
+        rating: 8
+        review: "A thrilling ride! 'Virtual Nightmare' kept me on the edge of my seat from beginning to end. The concept is fresh, and the execution is mostly solid. Evelyn Ethel's portrayal of Sarah stands out as a highlight. Definitely worth a watch!"
+        reviewTime: "2024-12-18T22:40:29.215000Z"
+        userUid: "theFlickPick"
+      }
+      {
+        id: "a4c3575bf87c5d3eae81a08d4f2d27e4"
+        movieId: "virtual-nightmare"
+        rating: 6
+        review: "While 'Virtual Nightmare' boasts impressive visuals and a gripping premise, the plot feels somewhat underdeveloped. The dangers of virtual reality are explored, but the film fails to delve deep enough into the psychological impact on the characters. Overall, an entertaining but ultimately shallow experience."
+        reviewTime: "2025-02-26T00:28:50.177000Z"
+        userUid: "screenSage"
+      }
+      {
+        id: "06361a26eea5509698708a6b53e51cff"
+        movieId: "virtual-nightmare"
+        rating: 3
+        review: "I had high hopes for Virtual Nightmare, but it fell flat. The visuals are nice, but the story is predictable, and the characters are forgettable. It feels like a generic action movie with a VR skin slapped on. Not recommended."
+        reviewTime: "2024-12-08T20:00:00.382000Z"
+        userUid: "projectorPro"
+      }
+      {
+        id: "f32b578de3b65ddd9aa79f875fe1caac"
+        movieId: "virtual-nightmare"
+        rating: 7
+        review: "Virtual Nightmare takes a familiar concept and gives it a fresh, modern twist. The action is intense, and the VR world is visually captivating. While some plot points are a bit convenient, the overall experience is enjoyable. I especially liked the dynamic between the characters, who really sold the fear and tension of being trapped in the game."
+        reviewTime: "2025-02-09T17:54:09.286000Z"
+        userUid: "filmFinder007"
+      }
+      {
+        id: "0df7349787e2509db6bc15ad7bc871ad"
+        movieId: "virtual-nightmare"
+        rating: 5
+        review: "The film is visually appealing, creating a believable virtual world. Unfortunately, the narrative lacks depth, and the characters' motivations are unclear. It's an entertaining but ultimately forgettable experience."
+        reviewTime: "2025-03-08T18:12:25.430000Z"
+        userUid: "criticCorner"
+      }
+      {
+        id: "544ba91e787356079c0778d19bffdc7d"
+        movieId: "vertical-siege"
+        rating: 3
+        review: "Explosions and gunfire galore, but very little substance. Sofia White tries her best, but she can't save a weak script and a predictable plot. Watch Die Hard instead."
+        reviewTime: "2025-01-09T15:30:20.357000Z"
+        userUid: "theViewingVault"
+      }
+    ]
+  )
+}

@@ -27,14 +27,17 @@ const connectorConfig = {
 export default (firebaseApp: FirebaseApp) => {
 	
 	const dataConnect = getDataConnect(firebaseApp, connectorConfig);
-    if (process.env.DATA_CONNECT_EMULATOR_HOST) {
-        // Connect to the local emulator
-        connectDataConnectEmulator(
-            dataConnect, 
-            process.env.DATA_CONNECT_EMULATOR_HOST, 
-            9399, 
-            false
-        );
-    }
+    if (process.env.NODE_ENV === "development") {
+        connectDataConnectEmulator(dataConnect, "127.0.0.1", 9399, false);
+      }
+    // if (process.env.DATA_CONNECT_EMULATOR_HOST) {
+    //     // Connect to the local emulator
+    //     connectDataConnectEmulator(
+    //         dataConnect, 
+    //         process.env.DATA_CONNECT_EMULATOR_HOST, 
+    //         9399, 
+    //         false
+    //     );
+    // }
 	return dataConnect;
 };
