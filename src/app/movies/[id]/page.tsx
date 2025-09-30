@@ -36,7 +36,8 @@ interface MoviePageProps {
 
 export default async function MovieDetailsPage({ params }: MoviePageProps) {
 	// Fetch movie data using the moviePage method
-	const result = await moviePage(dc, { movieId: params.id });
+	const { id } = await params;
+	const result = await moviePage(dc, { movieId: id });
 	const movie = result.data.movie;
 
 	// If movie not found, show error message

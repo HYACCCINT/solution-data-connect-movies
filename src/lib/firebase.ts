@@ -23,7 +23,6 @@ import {
 	signInWithPopup,
 	signOut as firebaseSignOut,
 	onAuthStateChanged,
-	connectAuthEmulator,
 } from "firebase/auth";
 import { updateUser } from "@app/data";
 import { firebaseConfig } from "@/config/firebaseConfig";
@@ -34,9 +33,7 @@ export const app = initializeApp(firebaseConfig);
 export const dc = dataConnect(app);
 
 export const auth = getAuth(app);
-if (process.env.NODE_ENV === "development") {
-	connectAuthEmulator(auth, "http://localhost:9099");
-  }
+
 export const signIn = () => {
 	signInWithPopup(auth, new GoogleAuthProvider());
 };
