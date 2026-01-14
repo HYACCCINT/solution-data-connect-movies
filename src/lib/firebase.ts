@@ -15,6 +15,7 @@
  */
 
 import { initializeApp } from "firebase/app";
+import { getAI, getGenerativeModel, GoogleAIBackend } from "firebase/ai";
 import dataConnect from "@/config/data-connect"
 import {
 	getAuth,
@@ -31,6 +32,14 @@ export const app = initializeApp(firebaseConfig);
 
 // Set up Firebase Data Connect with the settings from /src/config/data-connect.ts
 export const dc = dataConnect(app);
+const ai = getAI(app);
+
+export const getSearchEnabledModel = () => {
+  return getGenerativeModel(ai, {
+    model: "gemini-3-pro-preview", 
+    tools: [{ googleSearch: {} }]
+  });
+};
 
 export const auth = getAuth(app);
 
