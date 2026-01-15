@@ -97,7 +97,7 @@ export default async function MovieDetailsPage(props: MoviePageProps) {
                     title: movie.title,
                     genre: movie.genre,
                     posterUrl: movie.posterUrl,
-					description: movie.description,
+					          tags: movie.tags,
                   },
                 }}
               >
