@@ -36,7 +36,7 @@ const ai = getAI(app);
 
 export const getSearchEnabledModel = () => {
   return getGenerativeModel(ai, {
-    model: "gemini-3-pro-preview", 
+    model: "gemini-3-flash-preview", 
     tools: [{ googleSearch: {} }]
   });
 };

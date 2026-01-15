@@ -57,6 +57,7 @@ query MoviePage($movieId: String!) @auth(level: PUBLIC) {
 	movie(id: $movieId) {
 		...MovieOverview
 		description
+		tags
 		reviews: reviews_on_movie(orderBy: [{ reviewTime: DESC }], limit: 10) {
 			...ReviewOverview
 		}

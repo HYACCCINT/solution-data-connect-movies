@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 "use client";
 
 import { useState, Suspense, useRef, useEffect } from "react";
@@ -23,7 +24,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, MapPin, Search, Calendar, Film, Ticket } from "lucide-react";
+import { Loader2, MapPin, Calendar, Film, Ticket } from "lucide-react";
 
 const ShadowDomWrapper = ({ content, className }: { content: string; className?: string }) => {
     const hostRef = useRef<HTMLDivElement>(null);
@@ -31,13 +32,10 @@ const ShadowDomWrapper = ({ content, className }: { content: string; className?:
 
     useEffect(() => {
         if (hostRef.current && !shadowRootRef.current) {
-            // Attach Shadow DOM on first mount
             shadowRootRef.current = hostRef.current.attachShadow({ mode: "open" });
         }
         
         if (shadowRootRef.current) {
-            // Inject the content (HTML + CSS) into the shadow root
-            // We verify the content changed to avoid unnecessary repaints
             if (shadowRootRef.current.innerHTML !== content) {
                 shadowRootRef.current.innerHTML = content;
             }
@@ -62,8 +60,7 @@ interface MovieResult {
 function FindTheatresContent() {
     const searchParams = useSearchParams();
     const movieTitle = searchParams.get("title") || "";
-    const movieGenre = searchParams.get("genre") || "";
-    const movieDescription = searchParams.get("description") || "";
+    const tags = searchParams.getAll("tags") || "";
 
     const [location, setLocation] = useState("");
     const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
@@ -91,7 +88,6 @@ function FindTheatresContent() {
     const handleSearch = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!location || !date) return;
-
         setIsLoading(true);
         setMovies([]);
         setError("");
@@ -101,13 +97,12 @@ function FindTheatresContent() {
             const model = getSearchEnabledModel();
 
             const prompt = `
-                Context: User wants to see the movie "${movieTitle}" (${movieGenre}) in a theatre.
-                Movie Description: "${movieDescription}"
+                Context: User wants to see the movie matching "${tags}" in a theatre.
                 Location: ${location}
                 Date: ${date}
 
                 Task:
-                1. Find 2-3 movies similar to ${movieTitle} currently playing in this city.
+                1. Find 2-3 movies similar to ${tags} currently playing in this city.
                 4. Return strict JSON format.
 
                 JSON Schema:
@@ -115,8 +110,7 @@ function FindTheatresContent() {
                     "movies": [
                         {
                             "title": "Movie Title",
-                            "isTargetMovie": boolean,
-                            "description": "Short tagline or reason for recommendation",
+                            "description": "Movie description",
                             "theatres": [
                                 { "name": "Cinema Name", "showtimes": ["7:00 PM", "9:30 PM"] }
                             ]
@@ -224,8 +218,6 @@ function FindTheatresContent() {
                             </form>
                         </CardContent>
                     </Card>
-
-                    {/* Grounding Attribution (Required) - Now Isolated with Shadow DOM */}
                     {groundingMetadata && (
                         <div className="text-xs text-muted-foreground space-y-3 p-4 bg-muted/30 rounded-lg">
                             {groundingMetadata.searchEntryPoint?.renderedContent && (
@@ -255,7 +247,6 @@ function FindTheatresContent() {
                     )}
                 </div>
 
-                {/* Right Column: Results */}
                 <div className="space-y-6">
                     {isLoading && (
                         <div className="flex flex-col items-center justify-center py-20 space-y-4">
